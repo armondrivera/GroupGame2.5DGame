@@ -13,6 +13,7 @@ public class Movement2 : MonoBehaviour
     public float rotatePos = 0.0f;
     public int jumpShotCount = 0;
     public int plat = 0;
+    private float temp = 0.14f;
 
     private void Awake()
     {
@@ -39,7 +40,10 @@ public class Movement2 : MonoBehaviour
             MoveUp();
         }
 
-        //if ()
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+
+        }
 
         //Move Left
         if (Input.GetKey(KeyCode.LeftArrow))
