@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Movement2 : MonoBehaviour
 {
+    //The code for health subtracting may need to be a separate script
+    //Check this link for a solution
+    //https://answers.unity.com/questions/369380/lose-health-on-collision.html
+
     public Rigidbody playerRb;
     public Transform playerT;
     public float moveSpeed = 1.0f;
@@ -13,7 +17,8 @@ public class Movement2 : MonoBehaviour
     public float rotatePos = 0.0f;
     public int jumpShotCount = 0;
     public int plat = 0;
-    private float temp = 0.14f;
+    public int HP = 5;
+    //private float temp = 0.14f;
 
     private void Awake()
     {
@@ -77,12 +82,17 @@ public class Movement2 : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision Floor)
+    void OnCollisionEnter(Collision collision)
     {
-        if (Floor.gameObject.name == "Floor")
+        if (collision.gameObject.name == "Floor")
         {
             plat = 1;
         }
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+         HP--;
     }
 
     private void OnCollisionExit(Collision collision)

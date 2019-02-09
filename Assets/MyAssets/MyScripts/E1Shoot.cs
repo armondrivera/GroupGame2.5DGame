@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class E1Shoot : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody rb;
@@ -11,7 +11,7 @@ public class Bullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb.velocity = transform.right * speed;
+        rb.velocity = transform.right * -1 * speed;
     }
 
     private void Update()
@@ -39,7 +39,7 @@ public class Bullet : MonoBehaviour
             hit = 1;
         }
 
-        if (collision.gameObject.name == "Enemy1")
+        if (collision.gameObject.name == "Player")
         {
             hit = 1;
         }
