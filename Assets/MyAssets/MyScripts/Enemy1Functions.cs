@@ -9,7 +9,7 @@ public class Enemy1Functions : MonoBehaviour
     public Transform eFirePoint;
     public Transform target;
     public GameObject eShot;
-    public float speed = 1f;
+    public float speed = 0.1f;
     public float timer = 3.0f;
     public float rotatePos = 0;
     public bool inSight = false;
@@ -32,7 +32,7 @@ public class Enemy1Functions : MonoBehaviour
         Vector3 targetDir = target.position - transform.position;
         float angle = Vector3.Angle(targetDir, transform.right * -1);
 
-        if (angle < 60.0f)
+        if (angle < 180.0f)
         {
             Spotted(true);
         }
