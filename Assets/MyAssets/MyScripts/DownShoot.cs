@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-//Attached to Player Object
+//Script is Attached to Player Object
 public class DownShoot : MonoBehaviour
 {
     public Transform firePoint;

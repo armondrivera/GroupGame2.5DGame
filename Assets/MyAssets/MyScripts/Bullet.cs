@@ -6,7 +6,6 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody rb;
-    private int hit = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -16,32 +15,14 @@ public class Bullet : MonoBehaviour
 
     private void Update()
     {
-        if (hit != 0)
-        {
-            Destroy(gameObject);
-        }
+       
     }
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Floor")
+        if (collision.gameObject.tag != "Player" && collision.gameObject.tag != "Sight")
         {
-            hit = 1;
-        }
-
-        if (collision.gameObject.name == "Border")
-        {
-            hit = 1;
-        }
-
-        if (collision.gameObject.name == "Border2")
-        {
-            hit = 1;
-        }
-
-        if (collision.gameObject.name == "Enemy1")
-        {
-            hit = 1;
+            Destroy(gameObject);
         }
     }
 }

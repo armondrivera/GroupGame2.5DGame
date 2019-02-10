@@ -17,7 +17,6 @@ public class Movement2 : MonoBehaviour
     public float rotatePos = 0.0f;
     public int jumpShotCount = 0;
     public int plat = 0;
-    public int HP = 5;
     //private float temp = 0.14f;
 
     private void Awake()
@@ -88,11 +87,6 @@ public class Movement2 : MonoBehaviour
         {
             plat = 1;
         }
-    }
-
-    private void OnTriggerEnter(Collider collision)
-    {
-         HP--;
     }
 
     private void OnCollisionExit(Collision collision)

@@ -27,11 +27,6 @@ public class Shoot : MonoBehaviour
             ShootBullet();
             Shot.transform.position += new Vector3(60, 0, 0);
         }
-        
-        if (Input.GetKeyDown(KeyCode.Z))
-        {
-
-        }
 
 
     }
