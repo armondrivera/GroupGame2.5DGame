@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 933826732}
   - component: {fileID: 933826731}
   m_Layer: 0
-  m_Name: Enemy1 1
+  m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ MeshCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933826730}
-  m_Material: {fileID: 13400000, guid: c672dbe282613b54daf0d4623e6a3a65, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3

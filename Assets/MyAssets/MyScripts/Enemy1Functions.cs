@@ -14,9 +14,12 @@ public class Enemy1Functions : MonoBehaviour
     public float rotatePos = 0;
     public bool inSight = false;
 
-    // Contains Timer, chase, and line of sight code
+    //Contains Timer, chase, and line of sight code
+    //Replace Line of sight code with RAY CASTS
+    //https://answers.unity.com/questions/989092/do-you-know-any-patrolling-ai-script-for-a-navmesh.html
     void Update()
     {
+        //Shoot Timer
         if (timer > 0 && inSight == true)
         {
             timer -= Time.deltaTime;
@@ -35,10 +38,15 @@ public class Enemy1Functions : MonoBehaviour
         if (angle < 180.0f)
         {
             Spotted(true);
+            
+        }
+        else
+        {
+            Spotted(false);
         }
 
-        //movement code
-        if (target.position.x < gameObject.transform.position.x)
+        //Movement code
+        if (target.position.x <= gameObject.transform.position.x && inSight == true)
         {
             gameObject.transform.position += new Vector3(speed, 0, 0) * -1;
             if (rotatePos != 180)
@@ -47,7 +55,7 @@ public class Enemy1Functions : MonoBehaviour
             }
         }
 
-        if (target.position.x > gameObject.transform.position.x)
+        if (target.position.x >= gameObject.transform.position.x && inSight == true)
         {
             gameObject.transform.position += new Vector3(speed, 0, 0);
             if (rotatePos != 0)

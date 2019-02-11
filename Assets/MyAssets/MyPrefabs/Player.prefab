@@ -192,7 +192,7 @@ MonoBehaviour:
   playerT: {fileID: 4071800053662842600}
   moveSpeed: 0.14
   upForce: 450
-  bullUpForce: 200
+  bullUpForce: 225
   shotTimer: 3
   rotatePos: 0
   jumpShotCount: 0
@@ -208,8 +208,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.39364275, y: 0.8792901, z: 6.1232336e-17}
-  m_Center: {x: -0.041612998, y: -0.060354948, z: 0}
+  m_Size: {x: 0.3610025, y: 0.8792901, z: 6.1232336e-17}
+  m_Center: {x: -0.025292873, y: -0.060354948, z: 0}
 --- !u!114 &4071800053662842607
 MonoBehaviour:
   m_ObjectHideFlags: 0
