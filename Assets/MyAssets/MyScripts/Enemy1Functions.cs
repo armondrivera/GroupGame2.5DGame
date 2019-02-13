@@ -22,7 +22,6 @@ public class Enemy1Functions : MonoBehaviour
     }
 
     //Contains Timer, chase, and line of sight code
-    //Replace Line of sight code with RAY CASTS
     //https://answers.unity.com/questions/989092/do-you-know-any-patrolling-ai-script-for-a-navmesh.html
     void Update()
     {
@@ -38,6 +37,7 @@ public class Enemy1Functions : MonoBehaviour
             timer = 3.0f;
         }
 
+        //ray cast sight
         RaycastHit hit;
         Ray losRayL = new Ray(transform.position, Vector3.right * -1);
 
@@ -60,11 +60,7 @@ public class Enemy1Functions : MonoBehaviour
             Spotted(false);
         }
 
-
-        //Line of Sight code
-        /*Vector3 targetDir = target.position - transform.position;
-        float angle = Vector3.Angle(targetDir, transform.right * -1);
-
+        /*
         if (angle < 180.0f)
         {
             Spotted(true);

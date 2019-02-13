@@ -142,8 +142,8 @@ MonoBehaviour:
   eShot: {fileID: 6916165624359833793, guid: 36a20300acea2284aa058f3bdba818ef, type: 3}
   speed: 0.1
   timer: 3
-  rotatePos: 0
   inSight: 0
+  sight: 15
 --- !u!1 &1683008679
 GameObject:
   m_ObjectHideFlags: 0

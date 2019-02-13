@@ -13,7 +13,7 @@ public class Movement2 : MonoBehaviour
     public float moveSpeed = 1.0f;
     public float upForce = 5f;
     public float bullUpForce = 5f;
-    public float shotTimer = 3.0f;
+    public float shotTimer = 2.0f;
     public float rotatePos = 0.0f;
     public int jumpShotCount = 0;
     public int plat = 0;
@@ -35,7 +35,7 @@ public class Movement2 : MonoBehaviour
         if (shotTimer <= 0f)
         {
             jumpShotCount--;
-            shotTimer = 3.0f;
+            shotTimer = 2.0f;
         }
 
         //Jumps

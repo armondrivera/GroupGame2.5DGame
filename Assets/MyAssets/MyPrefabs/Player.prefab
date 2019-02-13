@@ -192,8 +192,8 @@ MonoBehaviour:
   playerT: {fileID: 4071800053662842600}
   moveSpeed: 0.14
   upForce: 450
-  bullUpForce: 225
-  shotTimer: 3
+  bullUpForce: 370
+  shotTimer: 2
   rotatePos: 0
   jumpShotCount: 0
   plat: 0
@@ -242,7 +242,7 @@ MonoBehaviour:
   Shot: {fileID: 8066936108415381428, guid: 546db9ec5d715f740906c59a1fbdd20b, type: 3}
   range: 10
   damage: 3
-  shotTimer: 3
+  shotTimer: 2
   counter: 0
   shotCount: 0
 --- !u!114 &4071800053662842606

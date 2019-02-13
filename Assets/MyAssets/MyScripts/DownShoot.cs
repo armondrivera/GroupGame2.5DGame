@@ -10,7 +10,7 @@ public class DownShoot : MonoBehaviour
     public GameObject Shot;
     public float range = 10f;
     public float damage = 3f;
-    public float shotTimer = 3.0f;
+    public float shotTimer = 2.0f;
     public int counter = 0;
     public int shotCount = 0;
 
@@ -31,7 +31,7 @@ public class DownShoot : MonoBehaviour
         if (shotTimer <= 0f)
         {
             shotCount--;
-            shotTimer = 3.0f;
+            shotTimer = 2.0f;
         }
 
         if (Input.GetKeyDown(KeyCode.Z) && counter == 0 && shotCount < 3)
