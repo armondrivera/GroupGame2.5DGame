@@ -44,7 +44,7 @@ public class DownShoot : MonoBehaviour
 
     void OnCollisionEnter(Collision Floor)
     {
-        if (Floor.gameObject.name == "Floor")
+        if (Floor.gameObject.tag == "Floor")
         {
             counter = 1;
         }
@@ -52,7 +52,7 @@ public class DownShoot : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "Floor")
+        if (collision.gameObject.tag == "Floor")
         {
             counter = 0;
         }

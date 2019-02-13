@@ -8,6 +8,7 @@ TagManager:
   - BadBullet
   - Enemy
   - Sight
+  - Floor
   layers:
   - Default
   - TransparentFX

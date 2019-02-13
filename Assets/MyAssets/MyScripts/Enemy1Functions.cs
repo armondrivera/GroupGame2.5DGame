@@ -11,8 +11,15 @@ public class Enemy1Functions : MonoBehaviour
     public GameObject eShot;
     public float speed = 0.1f;
     public float timer = 3.0f;
-    public float rotatePos = 0;
+    private float rotatePos;
     public bool inSight = false;
+
+    public float sight;
+
+    private void Start()
+    {
+        rotatePos = transform.eulerAngles.y;
+    }
 
     //Contains Timer, chase, and line of sight code
     //Replace Line of sight code with RAY CASTS
@@ -31,8 +38,31 @@ public class Enemy1Functions : MonoBehaviour
             timer = 3.0f;
         }
 
+        RaycastHit hit;
+        Ray losRayL = new Ray(transform.position, Vector3.right * -1);
+
+        Ray losRayR = new Ray(transform.position, Vector3.right);
+
+        if (Physics.Raycast(losRayL, out hit, sight) || Physics.Raycast(losRayR, out hit, sight))
+        {
+            if (hit.collider.tag == "Player")
+            {
+                Spotted(true);
+                transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
+            }
+            else
+            {
+                Spotted(false);
+            }
+        }
+        else
+        {
+            Spotted(false);
+        }
+
+
         //Line of Sight code
-        Vector3 targetDir = target.position - transform.position;
+        /*Vector3 targetDir = target.position - transform.position;
         float angle = Vector3.Angle(targetDir, transform.right * -1);
 
         if (angle < 180.0f)
@@ -43,12 +73,11 @@ public class Enemy1Functions : MonoBehaviour
         else
         {
             Spotted(false);
-        }
+        }*/
 
         //Movement code
         if (target.position.x <= gameObject.transform.position.x && inSight == true)
         {
-            gameObject.transform.position += new Vector3(speed, 0, 0) * -1;
             if (rotatePos != 180)
             {
                 FlipLeft();
@@ -57,7 +86,6 @@ public class Enemy1Functions : MonoBehaviour
 
         if (target.position.x >= gameObject.transform.position.x && inSight == true)
         {
-            gameObject.transform.position += new Vector3(speed, 0, 0);
             if (rotatePos != 0)
             {
                 FlipRight();

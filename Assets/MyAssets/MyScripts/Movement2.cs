@@ -83,7 +83,7 @@ public class Movement2 : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Floor")
+        if (collision.gameObject.tag == "Floor")
         {
             plat = 1;
         }
@@ -91,7 +91,7 @@ public class Movement2 : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.name == "Floor")
+        if (collision.gameObject.tag == "Floor")
         {
             plat = 0;
         }
