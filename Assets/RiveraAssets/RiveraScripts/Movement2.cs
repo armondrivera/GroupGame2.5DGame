@@ -10,12 +10,14 @@ public class Movement2 : MonoBehaviour
 
     public Rigidbody playerRb;
     public Transform playerT;
-    public float moveSpeed = 1.0f;
+    public float moveSpeed = 0.14f;
+    private float dashSpeed = 16f;
     public float upForce = 5f;
     public float bullUpForce = 5f;
-    public float shotTimer = 2.0f;
+    public float shotTimer = 1.5f;
     public float rotatePos = 0.0f;
     public int jumpShotCount = 0;
+    public Animator playerA;
     public int plat = 0;
     //private float temp = 0.14f;
 
@@ -35,7 +37,7 @@ public class Movement2 : MonoBehaviour
         if (shotTimer <= 0f)
         {
             jumpShotCount--;
-            shotTimer = 2.0f;
+            shotTimer = 1.5f;
         }
 
         //Jumps
@@ -46,20 +48,25 @@ public class Movement2 : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.C))
         {
-
+            Dash();
         }
 
         //Move Left
         if (Input.GetKey(KeyCode.LeftArrow))
         {
+            playerA.SetBool("move", true);
+            playerA.SetBool("grounded", true);
             MoveLeft();
         }
-
+        
         //MoveRight
         if (Input.GetKey(KeyCode.RightArrow))
         {
+            playerA.SetBool("move", true);
+            playerA.SetBool("grounded", true);
             MoveRight();
         }
+        
 
         //Rotate
         if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -70,6 +77,8 @@ public class Movement2 : MonoBehaviour
             }
         }
 
+        
+
         //Rotate
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -78,6 +87,10 @@ public class Movement2 : MonoBehaviour
                 FlipRight();
             }
             
+        }
+        else
+        {
+            playerA.Play("Ikera-Idle");
         }
     }
 
@@ -127,6 +140,11 @@ public class Movement2 : MonoBehaviour
     void MoveRight()
     {
         transform.position += new Vector3(1, 0, 0) * moveSpeed;
+    }
+
+    void Dash()
+    {
+        playerRb.AddForce(Vector3.right * dashSpeed);
     }
 
     void FlipLeft()

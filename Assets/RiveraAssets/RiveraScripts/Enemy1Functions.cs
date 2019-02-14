@@ -9,8 +9,8 @@ public class Enemy1Functions : MonoBehaviour
     public Transform eFirePoint;
     public Transform target;
     public GameObject eShot;
-    public float speed = 0.1f;
-    public float timer = 3.0f;
+    public float speed = 0.11f;
+    public float timer = 1.8f;
     private float rotatePos;
     public bool inSight = false;
 
@@ -34,7 +34,7 @@ public class Enemy1Functions : MonoBehaviour
         if (timer <= 0 && inSight == true)
         {
             ShootBullet();
-            timer = 3.0f;
+            timer = 1.8f;
         }
 
         //ray cast sight
