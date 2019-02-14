@@ -138,12 +138,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eFirePoint: {fileID: 1683008680}
-  target: {fileID: 4071800053662842600, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+  target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
   eShot: {fileID: 6916165624359833793, guid: 36a20300acea2284aa058f3bdba818ef, type: 3}
   speed: 0.11
   timer: 1.8
   inSight: 0
-  sight: 20
+  sight: 15
 --- !u!1 &1683008679
 GameObject:
   m_ObjectHideFlags: 0
