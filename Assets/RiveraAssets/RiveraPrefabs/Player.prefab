@@ -114,7 +114,7 @@ MeshCollider:
   serializedVersion: 3
   m_Convex: 1
   m_CookingOptions: 14
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!54 &4071800053662842603
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -146,9 +146,11 @@ MonoBehaviour:
   playerRb: {fileID: 4071800053662842603}
   playerT: {fileID: 4071800053662842600}
   moveSpeed: 0.14
+  dashSpeed: 10
   upForce: 450
   bullUpForce: 370
   shotTimer: 1.5
+  dashTimer: 0.5
   rotatePos: 0
   jumpShotCount: 0
   playerA: {fileID: 8967331001513823364}
