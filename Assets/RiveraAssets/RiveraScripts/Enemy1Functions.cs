@@ -108,7 +108,7 @@ public class Enemy1Functions : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {

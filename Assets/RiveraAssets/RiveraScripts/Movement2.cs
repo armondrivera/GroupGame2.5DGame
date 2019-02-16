@@ -166,13 +166,13 @@ public class Movement2 : MonoBehaviour
     {
         if (rotatePos == 0)
         {
-            gameObject.transform.position += new Vector3(1, 0, 0) * 0.6f;
+            gameObject.transform.position += new Vector3(1, 0, 0) * 0.7f;
             //playerRb.AddForce(Vector3.right * dashSpeed);
         }
 
         if (rotatePos == 180)
         {
-            gameObject.transform.position += new Vector3(-1, 0, 0) * 0.6f;
+            gameObject.transform.position += new Vector3(-1, 0, 0) * 0.7f;
             //playerRb.AddForce(-Vector3.right * dashSpeed);
         }
 

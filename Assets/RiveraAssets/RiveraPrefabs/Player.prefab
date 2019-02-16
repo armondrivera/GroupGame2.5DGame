@@ -147,7 +147,7 @@ MonoBehaviour:
   playerT: {fileID: 49}
   moveSpeed: 0.2
   dashSpeed: 10
-  upForce: 450
+  upForce: 460
   bullUpForce: 370
   shotTimer: 1.5
   dashTimer: 0.5
