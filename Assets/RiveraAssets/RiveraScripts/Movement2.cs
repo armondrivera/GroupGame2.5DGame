@@ -21,8 +21,6 @@ public class Movement2 : MonoBehaviour
 
     public int jumpShotCount = 0;
 
-    public Animator playerA;
-
     public int plat = 0;
     //private float temp = 0.14f;
 
@@ -76,16 +74,12 @@ public class Movement2 : MonoBehaviour
         //Move Left
         if (Input.GetKey(KeyCode.LeftArrow) && isDashing == false)
         {
-            //playerA.SetBool("move", true);
-            //playerA.SetBool("grounded", true);
             MoveLeft();
         }
         
         //MoveRight
         if (Input.GetKey(KeyCode.RightArrow) && isDashing == false)
         {
-            //playerA.SetBool("move", true);
-            //playerA.SetBool("grounded", true);
             MoveRight();
         }
 
@@ -108,10 +102,6 @@ public class Movement2 : MonoBehaviour
                 FlipRight();
             }
             
-        }
-        else
-        {
-            playerA.Play("Ikera-Idle");
         }
     }
 
