@@ -12,6 +12,12 @@ public class CamFollow : MonoBehaviour
     //distance between ship and camera
     private float camToPlayerDistance;
 
+
+    private void Start()
+    {
+        transform.position = player.transform.position;
+    }
+
     // Update is called once per frame
     void Update()
     {

@@ -2,19 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElecTrap : MonoBehaviour
+public class FlameTrap : MonoBehaviour
 {
-
-    private float trapTimer = 4;
-    private float activeTimer = 2;
+    private float trapTimer = 6;
+    private float activeTimer = 4;
     private bool trapActive = false;
     private readonly int damage = 1;
-    public Animator elecTrapAnim;
+    public Animator flameTrapAnim;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -29,7 +28,7 @@ public class ElecTrap : MonoBehaviour
         if (trapTimer <= 0)
         {
             trapActive = true;
-            elecTrapAnim.SetBool("Active", true);
+            flameTrapAnim.SetBool("Active", true);
         }
 
         if (trapActive == true)
@@ -40,9 +39,9 @@ public class ElecTrap : MonoBehaviour
         if (activeTimer <= 0)
         {
             trapActive = false;
-            trapTimer = 4;
-            activeTimer = 2;
-            elecTrapAnim.SetBool("Active", false);
+            trapTimer = 6;
+            activeTimer = 4;
+            flameTrapAnim.SetBool("Active", false);
         }
     }
 
