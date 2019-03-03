@@ -15,7 +15,7 @@ public class Movement2 : MonoBehaviour
     public float bullUpForce = 5f;
 
     public float shotTimer = 1.5f;
-    public float dashTimer = 0.5f;
+    public float dashTimer = 0.8f;
 
     public float rotatePos = 0.0f;
 
@@ -67,7 +67,7 @@ public class Movement2 : MonoBehaviour
 
             if (dashTimer <= 0f)
             {
-                dashTimer = 0.5f;
+                dashTimer = 0.8f;
                 transform.position += Vector3.zero;
                 playerRb.velocity = Vector3.zero;
                 isDashing = false;

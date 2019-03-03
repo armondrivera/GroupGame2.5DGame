@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 
 public class HUD : MonoBehaviour {
-	[SerializeField] private SegmentedBar hpBar;
+	/*[SerializeField] private SegmentedBar hpBar;
 	[SerializeField] private SegmentedBar jumpBar;
 
 	//Start, so that it happens AFTER the GameManager's Awake() does its initialization
@@ -20,5 +20,5 @@ public class HUD : MonoBehaviour {
 
 	private void OnJumpsRemainingChanged() {
 		jumpBar.Value = GameManager.PlayerDownShoot.JumpsRemaining;
-	}
+	}*/
 }
