@@ -15,9 +15,9 @@ public class Movement2 : MonoBehaviour
     public float bullUpForce = 5f;
 
     public float shotTimer = 1.5f;
-    public float dashTimer = 0.8f;
+    public float dashTimer = 0.14f;
 
-    public float rotatePos = 0.0f;
+    public float rotatePos = 0f;
 
     public int jumpShotCount = 0;
 
@@ -67,7 +67,7 @@ public class Movement2 : MonoBehaviour
 
             if (dashTimer <= 0f)
             {
-                dashTimer = 0.8f;
+                dashTimer = 0.14f;
                 transform.position += Vector3.zero;
                 playerRb.velocity = Vector3.zero;
                 isDashing = false;
@@ -116,7 +116,7 @@ public class Movement2 : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.tag == "Floor")
         {
@@ -167,13 +167,13 @@ public class Movement2 : MonoBehaviour
     {
         if (rotatePos == 0)
         {
-            gameObject.transform.position += new Vector3(1, 0, 0) * 0.7f;
+            gameObject.transform.position += new Vector3(1, 0, 0) * 0.62f;
             //playerRb.AddForce(Vector3.right * dashSpeed);
         }
 
         if (rotatePos == 180)
         {
-            gameObject.transform.position += new Vector3(-1, 0, 0) * 0.7f;
+            gameObject.transform.position += new Vector3(-1, 0, 0) * 0.62f;
             //playerRb.AddForce(-Vector3.right * dashSpeed);
         }
 

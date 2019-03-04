@@ -95,7 +95,7 @@ Transform:
   m_GameObject: {fileID: 43}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.51, y: 3.4, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 47}
   - {fileID: 48}
@@ -154,6 +154,7 @@ MonoBehaviour:
   dashTimer: 0.5
   rotatePos: 0
   jumpShotCount: 0
+  playerA: {fileID: 65}
   plat: 0
 --- !u!65 &64
 BoxCollider:
@@ -166,8 +167,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.19461656, y: 0.7516594, z: 6.1232336e-17}
-  m_Center: {x: -0.06747021, y: -0.12417179, z: 0}
+  m_Size: {x: 0.34973812, y: 1.4402122, z: 6.1232336e-17}
+  m_Center: {x: 0.013273716, y: -0.5636997, z: 0}
 --- !u!114 &77
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4974d4cc75beb640a67df0037635a9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 10
+  maxHP: 6
   alive: 1
 --- !u!95 &65
 Animator:
@@ -273,7 +274,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e1f7bbee64da94845a9244fa286bfa76, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e68c3f59392ced4e8d601b13eb9e77d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -296,3 +297,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8aa9c639ddb8c6438d7e6381e8f250e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnSpeedThreshold: 10
