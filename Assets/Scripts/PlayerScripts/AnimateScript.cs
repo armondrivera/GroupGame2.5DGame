@@ -29,7 +29,7 @@ public class AnimateScript : MonoBehaviour {
 	[SerializeField] private float turnSpeedThreshold = 10;
 
 	private Animator animator;
-	private float dashTimer = 0.8f;
+	private float dashTimer = 0.3f;
 	private float jumpTwo = 0.8f;
 
 	//Velocity is a vector -- means it has multiple components or "dimensions" -- made of SEVERAL numbers.
@@ -60,7 +60,7 @@ public class AnimateScript : MonoBehaviour {
             playerAnim.SetBool(RunId, false);
         }*/
 
-		if (Input.GetKeyDown(KeyCode.C)) {
+		if (Input.GetKeyDown(KeyCode.C) && gameObject.GetComponent<Movement2>().plat != 0) {
 			animator.SetBool(RunId, false);
 			animator.SetBool(DashId, true);
 			animator.SetBool(RunId, false);
@@ -72,7 +72,7 @@ public class AnimateScript : MonoBehaviour {
 
 		if (dashTimer <= 0) {
 			animator.SetBool(DashId, false);
-			dashTimer = 0.8f;
+			dashTimer = 0.3f;
 			animator.SetBool(JumpId, false);
 			animator.SetBool(SecondJumpId, false);
 		}
@@ -80,6 +80,7 @@ public class AnimateScript : MonoBehaviour {
 		if (gameObject.GetComponent<Movement2>().plat == 0) {
 			animator.SetBool(JumpId, true);
 			animator.SetBool(IsGrounded, false);
+            animator.SetBool(DashId, false);
 		}
 
 		if (Input.GetKeyDown(KeyCode.Z) && animator.GetBool(JumpId) == true) {
@@ -128,11 +129,15 @@ public class AnimateScript : MonoBehaviour {
 		prevPosition = position;
 	}
 
-	private void OnCollisionEnter(Collision collision) {
+	private void OnCollisionStay(Collision collision) {
 		if (collision.gameObject.tag == "Floor") {
 			animator.SetBool(IsGrounded, true);
 			jumpTwo = 0.8f;
 		}
+        else
+        {
+            animator.SetBool(IsGrounded, false);
+        }
 	}
 	/*Animator playerAnim;
     private float dashTimer = 0.8f;

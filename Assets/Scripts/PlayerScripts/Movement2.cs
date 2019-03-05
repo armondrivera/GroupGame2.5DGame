@@ -33,7 +33,7 @@ public class Movement2 : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         if (jumpShotCount > 0)
         {
@@ -57,13 +57,18 @@ public class Movement2 : MonoBehaviour
             isDashing = true;
         }
 
-        if (isDashing == true)
+        if (isDashing == true && plat == 1)
         {
             dashTimer -= Time.deltaTime;
             if (dashTimer > 0f)
             {
                 Dash();
             }
+        }
+        else
+        {
+            isDashing = false;
+            dashTimer = 0.14f;
         }
 
         if (dashTimer <= 0f)

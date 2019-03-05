@@ -99,6 +99,7 @@ Transform:
   m_Children:
   - {fileID: 47}
   - {fileID: 48}
+  - {fileID: 3888436916214348023}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -298,3 +299,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeedThreshold: 10
+--- !u!1 &5559602593790872639
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3888436916214348023}
+  - component: {fileID: 4071664501337150840}
+  m_Layer: 0
+  m_Name: Slide
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3888436916214348023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559602593790872639}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.02051, y: -0.642, z: 0}
+  m_LocalScale: {x: 0.9833748, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 49}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &4071664501337150840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5559602593790872639}
+  m_Material: {fileID: 13400000, guid: 8b7bd4ffaf0c8b9428f40402e5c4da63, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6700694, y: 0.1147933, z: 6.1232336e-17}
+  m_Center: {x: 0.019291589, y: -1.2264092, z: 0}
