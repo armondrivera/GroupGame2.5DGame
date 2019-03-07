@@ -42,7 +42,7 @@ public class BreakPlatformManage : MonoBehaviour
 
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Player" && rebuildTimer == 9.0f)
         {
