@@ -10,7 +10,7 @@ public class E1Bullet : MonoBehaviour {
 
 	// Start is called before the first frame update
 	public void Start() {
-		rb.velocity = transform.right * speed;
+		rb.velocity = -transform.up * speed;
 	}
 
 	public void Update() {
@@ -27,5 +27,9 @@ public class E1Bullet : MonoBehaviour {
 			other.gameObject.GetComponent<HealthScript>().TakeDamage(damage);
 			Destroy(gameObject);
 		}
+        else
+        {
+            Destroy(gameObject);
+        }
 	}
 }

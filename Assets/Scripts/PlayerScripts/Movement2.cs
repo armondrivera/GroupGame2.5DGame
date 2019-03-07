@@ -123,7 +123,7 @@ public class Movement2 : MonoBehaviour
 
     void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
             plat = 1;
         }
@@ -131,7 +131,7 @@ public class Movement2 : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
             plat = 0;
         }

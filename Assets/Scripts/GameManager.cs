@@ -51,6 +51,8 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+
+
 	private void OnPlayerDeath() {
 		Debug.Log("The player has died! Ouch." +
 			"\nYou can use the onDeath C# event from anywhere! For example: \"GameManager.PlayerHealth.onDeath += TheNameOfYourMethod;\"");

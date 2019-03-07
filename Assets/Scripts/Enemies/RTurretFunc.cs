@@ -4,13 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy1Functions : MonoBehaviour
+public class RTurretFunc : MonoBehaviour
 {
     public Transform eFirePoint;
     public Transform target;
     public GameObject eShot;
+    public float LeftOrRight;
     public float speed = 0.11f;
-    public float timer = 1.8f;
+    private float timer = 1f;
     private float rotatePos;
     public bool inSight = false;
 
@@ -34,21 +35,19 @@ public class Enemy1Functions : MonoBehaviour
         if (timer <= 0 && inSight == true)
         {
             ShootBullet();
-            timer = 1.8f;
+            timer = 1f;
         }
 
         //ray cast sight
         RaycastHit hit;
-        Ray losRayL = new Ray(transform.position, Vector3.right * -1);
 
-        Ray losRayR = new Ray(transform.position, Vector3.right);
+        Ray losRayR = new Ray(transform.position, Vector3.right * LeftOrRight);
 
-        if (Physics.Raycast(losRayL, out hit, sight) || Physics.Raycast(losRayR, out hit, sight))
+        if (Physics.Raycast(losRayR, out hit, sight))
         {
             if (hit.collider.tag == "Player")
             {
                 Spotted(true);
-                transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
             }
             else
             {
@@ -60,33 +59,7 @@ public class Enemy1Functions : MonoBehaviour
             Spotted(false);
         }
 
-        /*
-        if (angle < 180.0f)
-        {
-            Spotted(true);
-            
-        }
-        else
-        {
-            Spotted(false);
-        }*/
 
-        //Movement code
-        if (target.position.x <= gameObject.transform.position.x && inSight == true)
-        {
-            if (rotatePos != 180)
-            {
-                FlipLeft();
-            }
-        }
-
-        if (target.position.x >= gameObject.transform.position.x && inSight == true)
-        {
-            if (rotatePos != 0)
-            {
-                FlipRight();
-            }
-        }
     }
 
     private void FlipRight()
@@ -108,6 +81,7 @@ public class Enemy1Functions : MonoBehaviour
 
     }
 
+
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Bullet")
@@ -116,12 +90,12 @@ public class Enemy1Functions : MonoBehaviour
         }
     }
 
-    public void Spotted(bool seen)
+    void Spotted(bool seen)
     {
         inSight = seen;
     }
 
-    private void Death()
+    void Death()
     {
         Destroy(gameObject);
     }

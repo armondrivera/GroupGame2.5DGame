@@ -130,7 +130,7 @@ public class AnimateScript : MonoBehaviour {
 	}
 
 	private void OnCollisionStay(Collision collision) {
-		if (collision.gameObject.tag == "Floor") {
+		if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat") {
 			animator.SetBool(IsGrounded, true);
 			jumpTwo = 0.8f;
 		}
