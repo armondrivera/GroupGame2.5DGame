@@ -220,6 +220,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 6
   destroyOnDeath: 1
+  invTimer: 3
 --- !u!95 &65
 Animator:
   serializedVersion: 3

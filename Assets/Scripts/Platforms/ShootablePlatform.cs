@@ -48,12 +48,14 @@ public class ShootablePlatform : MonoBehaviour
         if (leftSide.GetComponent<ShootablePlatformSide>().shot == true && rightSide.GetComponent<ShootablePlatformSide>().shot == false)
         {
             shotL = true;
+            shotR = false;
         }
         else
         {
             if (rightSide.GetComponent<ShootablePlatformSide>().shot == true && leftSide.GetComponent<ShootablePlatformSide>().shot == false)
             {
                 shotR = true;
+                shotL = false;
             }
         }
     }

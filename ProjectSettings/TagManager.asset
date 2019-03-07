@@ -11,6 +11,9 @@ TagManager:
   - Floor
   - MovePlat
   - Trap
+  - GameOverCanvas
+  - SceneController
+  - KillBox
   layers:
   - Default
   - TransparentFX
