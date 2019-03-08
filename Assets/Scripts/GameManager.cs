@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //Note: slightly advanced topic: This is a singleton
 //The GameManager will maintain (ONLY ONE) static instance of itself (the GameManager class)
@@ -59,5 +60,5 @@ public class GameManager : MonoBehaviour {
 		Debug.Log("The player has died! Ouch." +
 			"\nYou can use the onDeath C# event from anywhere! For example: \"GameManager.PlayerHealth.onDeath += TheNameOfYourMethod;\"");
         gameOverCanvas.SetActive(true);
-	}
+    }
 }

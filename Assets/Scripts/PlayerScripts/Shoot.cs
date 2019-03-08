@@ -24,11 +24,16 @@ public class Shoot : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            ShootBullet();
+            CallNow();
             Shot.transform.position += new Vector3(60, 0, 0);
         }
 
 
+    }
+
+    void CallNow()
+    {
+        Invoke("ShootBullet", 0.2f);
     }
     
     void ShootBullet()

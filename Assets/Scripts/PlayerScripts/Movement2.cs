@@ -7,15 +7,21 @@ public class Movement2 : MonoBehaviour
     public Rigidbody playerRb;
     public Transform playerT;
     public float moveSpeed = 0.14f;
+    private float spareMoveSpeed;
     public float dashSpeed = 10.0f;
 
     private bool isDashing = false;
+    private bool isShooting = false;
 
     public float upForce = 5f;
     public float bullUpForce = 5f;
 
-    public float shotTimer = 1.5f;
+    public float shotRefillTimer = 1.5f;
     public float dashTimer = 0.14f;
+
+
+    private float shootTimer = 0.2f;
+    private float spareShoot;
 
     public float rotatePos = 0f;
 
@@ -28,6 +34,8 @@ public class Movement2 : MonoBehaviour
 
     private void Awake()
     {
+        spareMoveSpeed = moveSpeed;
+        spareShoot = shootTimer;
         playerRb = GetComponent<Rigidbody>();
         playerA = GetComponent<Animator>();
     }
@@ -37,13 +45,13 @@ public class Movement2 : MonoBehaviour
     {
         if (jumpShotCount > 0)
         {
-            shotTimer -= Time.deltaTime;
+            shotRefillTimer -= Time.deltaTime;
         }
 
-        if (shotTimer <= 0f)
+        if (shotRefillTimer <= 0f)
         {
             jumpShotCount--;
-            shotTimer = 1.5f;
+            shotRefillTimer = 1.5f;
         }
 
         //Jumps
@@ -52,6 +60,7 @@ public class Movement2 : MonoBehaviour
             MoveUp();
         }
 
+        //Slide right into the dm's
         if (Input.GetKeyDown(KeyCode.C))
         {
             isDashing = true;
@@ -77,6 +86,33 @@ public class Movement2 : MonoBehaviour
             transform.position += Vector3.zero;
             playerRb.velocity = Vector3.zero;
             isDashing = false;
+        }
+
+        //Mega Buster
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            isShooting = true;
+            moveSpeed = 0;
+            transform.position += Vector3.zero;
+            playerRb.velocity = Vector3.zero;
+        }
+
+        if (isShooting == true)
+        {
+            moveSpeed = 0;
+            isDashing = false;
+            dashTimer = 0.14f;
+            shootTimer -= Time.deltaTime;
+
+            transform.position += Vector3.zero;
+            playerRb.velocity = Vector3.zero;
+        }
+
+        if (shootTimer < 0)
+        {
+            isShooting = false;
+            moveSpeed = spareMoveSpeed;
+            shootTimer = spareShoot;
         }
 
         //Move Left

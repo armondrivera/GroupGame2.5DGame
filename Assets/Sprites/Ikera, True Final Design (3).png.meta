@@ -1,0 +1,1286 @@
+fileFormatVersion: 2
+guid: 81c20f3c59981184b8081cf7208765c8
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Ikera, True Final Design (3)_0
+    21300002: Ikera, True Final Design (3)_1
+    21300004: Ikera, True Final Design (3)_2
+    21300006: Ikera, True Final Design (3)_3
+    21300008: Ikera, True Final Design (3)_4
+    21300010: Ikera, True Final Design (3)_5
+    21300012: Ikera, True Final Design (3)_6
+    21300014: Ikera, True Final Design (3)_7
+    21300016: Ikera, True Final Design (3)_8
+    21300018: Ikera, True Final Design (3)_9
+    21300020: Ikera, True Final Design (3)_10
+    21300022: Ikera, True Final Design (3)_11
+    21300024: Ikera, True Final Design (3)_12
+    21300026: Ikera, True Final Design (3)_13
+    21300028: Ikera, True Final Design (3)_14
+    21300030: Ikera, True Final Design (3)_15
+    21300032: Ikera, True Final Design (3)_16
+    21300034: Ikera, True Final Design (3)_17
+    21300036: Ikera, True Final Design (3)_18
+    21300038: Ikera, True Final Design (3)_19
+    21300040: Ikera, True Final Design (3)_20
+    21300042: Ikera, True Final Design (3)_21
+    21300044: Ikera, True Final Design (3)_22
+    21300046: Ikera, True Final Design (3)_23
+    21300048: Ikera, True Final Design (3)_24
+    21300050: Ikera, True Final Design (3)_25
+    21300052: Ikera, True Final Design (3)_26
+    21300054: Ikera, True Final Design (3)_27
+    21300056: Ikera, True Final Design (3)_28
+    21300058: Ikera, True Final Design (3)_29
+    21300060: Ikera, True Final Design (3)_30
+    21300062: shot0
+    21300064: shot1
+    21300066: shot2
+    21300068: shot3
+    21300070: shot4
+    21300072: Ikera, True Final Design (3)_36
+    21300074: Ikera, True Final Design (3)_37
+    21300076: Ikera, True Final Design (3)_38
+    21300078: Ikera, True Final Design (3)_39
+    21300080: Ikera, True Final Design (3)_40
+    21300082: Ikera, True Final Design (3)_41
+    21300084: Ikera, True Final Design (3)_42
+    21300086: Ikera, True Final Design (3)_43
+    21300088: Ikera, True Final Design (3)_44
+    21300090: Ikera, True Final Design (3)_45
+    21300092: Ikera, True Final Design (3)_46
+    21300094: Ikera, True Final Design (3)_47
+    21300096: Ikera, True Final Design (3)_48
+    21300098: Ikera, True Final Design (3)_49
+    21300100: Ikera, True Final Design (3)_50
+    21300102: Ikera, True Final Design (3)_51
+    21300104: Ikera, True Final Design (3)_52
+    21300106: Ikera, True Final Design (3)_53
+    21300108: Ikera, True Final Design (3)_54
+    21300110: Ikera, True Final Design (3)_55
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25321d40b41461c4aa5562f7a1eb3946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_1
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45648afbd66f78a4489cde892949034c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_2
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c99bccc297d98459c8e802a985c68e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_3
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d715943c98805d6448ea2afe9f549b54
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_4
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9be23f3328bf74a8e43452e4bf7bd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_5
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b8f085a6ed7bd94e924eb6db651d9d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_6
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bc5ff8949aacdb40bb643fad58b5bcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_7
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee9ad034eaafa8b4b8869b308645efa2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_8
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45945f1b5ea40594e8a6d7af6bab0159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_9
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 1280.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 238e31d651c9b8040b630243aaf9b98a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a8332b4b8f7a24da869e10473ea2ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_11
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d43ab33faf188484eb74defc6c5dae8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_12
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f221c8fbeba7d840a572bab22cade50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_13
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 385e99eb4a72a2d408a7a6e53f344594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_14
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668c4c3057e13434da457ecab7c0a4db
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_15
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cc0fcb78f47394f89a82c2ec86813c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_16
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148ea2d541ad1a04791639516746b2e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_17
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4847cf2678b774146ad05a0c1b9829b8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_18
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5667e8153d348438fa7a9b8c8d18fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_19
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 1024.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bde54d798263da4ca1ec9237d1f9ac9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11bbf6afde48a8b468c8e2aebb4523bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 768
+        width: 336
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894521de7ac9deb408acea281cd54605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_22
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 768
+        width: 336
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b64e4aa3f89424ab48f9d7dda6b035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_23
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 768
+        width: 336
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58824c33550f9b240ae8e925ab5999d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_24
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 768.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cec2354330a3ab45adcbe5dae69a279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_25
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 768.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b331f2e5c1c766f4f9ea4fbf73af4bbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_26
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 768.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2815a05f156bf254ca436d186db53474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_27
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 768.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf680de3ab114346bea19820379dd06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_28
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 768.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3d09f7a7671444abd75718781b3b63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_29
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 768.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c276e72bde0f64984908552bbcf86f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a3bc92fa9af08248b38393d44d0f350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shot0
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 513
+        width: 336
+        height: 255
+      alignment: 9
+      pivot: {x: 0.40328237, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a92854132a3f5458ea5c4a6463f27f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shot1
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 513
+        width: 336
+        height: 255
+      alignment: 9
+      pivot: {x: 0.40328237, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d8db30a1a13f042a09f32852de7702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shot2
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 513
+        width: 336
+        height: 255
+      alignment: 9
+      pivot: {x: 0.40328237, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdee97b17063814499d3d94c35c95c40
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shot3
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 512.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 9
+      pivot: {x: 0.40328237, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5444624091f4d034198c2ed1954fdb70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shot4
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 512.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 9
+      pivot: {x: 0.40328237, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed62b25b99b30e94980b34d8dd176d22
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_36
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 512.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7b3515f486b2044b7105de1f2d0bc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_37
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 512.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea21e6a0d253c404baea338a5c24deeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_38
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 512.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32401380efc5949478639d5c50fa0776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_39
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 512.8334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a04d60d24ce86540b095b5cde07b9c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e43b1d6b9ce79443a2c934bfc0ce686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_41
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cbebffb2f274a6409a390d063e4d6d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_42
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f20705f91d1f274c93b56dd9fdf9e90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_43
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 076db584a4e5ec546b0757471328ae25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_44
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01822ad5c8120024e991bab9e3f03eaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_45
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b75ca316c42492499af8d1cbeaad39e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_46
+      rect:
+        serializedVersion: 2
+        x: 2016
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3797fada6aff621429595156ed704f30
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_47
+      rect:
+        serializedVersion: 2
+        x: 2352
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746c37283ed066a47b90268d7331335c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_48
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27912241ed647db47af6be2071ab0024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_49
+      rect:
+        serializedVersion: 2
+        x: 3024
+        y: 256.83334
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c92fd9f423968e48bf4f3f6cf9456f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.8333435
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4695d8a5cfd614e8a8b73201180e53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_51
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0.8333435
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa13aa1d7ca57b4cb1e3d249beb3295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_52
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0.8333435
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d586b1fac1e38743822dedc7ef69237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_53
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0.8333435
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2636a11d120ca48a3fcae0b6a7b7d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_54
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0.8333435
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8504179236cfe7642a6b7f0cee761e57
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ikera, True Final Design (3)_55
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0.8333435
+        width: 336.4
+        height: 256.16666
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e33f5aa2b32e23499c44136357a2e8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 86b0088b6f10d46438547cadeb3b2e1e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

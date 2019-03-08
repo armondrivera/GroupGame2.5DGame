@@ -9,10 +9,11 @@ public class AnimateScript : MonoBehaviour {
 	private static readonly int IsGrounded;
 	private static readonly int SecondJumpId;
 	private static readonly int HitGroundId;
+    private static readonly int ShootId;
 
-	//Yes, this part is necessary, don't delete the static constructor that sets up the Animator hash ids!
-	//Throwing the string names of the Animator parameters is a hefty price on the program's efficiency!
-	static AnimateScript() {
+    //Yes, this part is necessary, don't delete the static constructor that sets up the Animator hash ids!
+    //Throwing the string names of the Animator parameters is a hefty price on the program's efficiency!
+    static AnimateScript() {
 		//The string names are only used ONCE -- right here! So it also makes it centralized here,
 		//-- that is, easier to edit, because it's all in this one place.
 		RunId = Animator.StringToHash("Run");
@@ -21,8 +22,9 @@ public class AnimateScript : MonoBehaviour {
 		IsGrounded = Animator.StringToHash("Is Grounded");
 		SecondJumpId = Animator.StringToHash("Second Jump");
 		HitGroundId = Animator.StringToHash("Hit Ground");
+        ShootId = Animator.StringToHash("Shoot");
 
-	}
+    }
 
 	[Tooltip("The minimum speed in which the player must be moving in m/s, such that if they stopped or reverse direction, they will have to turn.")]
 	[Range(0, 30)]
@@ -31,7 +33,7 @@ public class AnimateScript : MonoBehaviour {
 	private Animator animator;
 	private float dashTimer = 0.3f;
 	private float jumpTwo = 0.8f;
-    private float shootTimer = 0.3f;
+    private float shootTimer = 0.2f;
     private float spareShoot;
 
 	//Velocity is a vector -- means it has multiple components or "dimensions" -- made of SEVERAL numbers.
@@ -93,17 +95,21 @@ public class AnimateScript : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            animator.SetBool("Shoot", true);
+            animator.SetBool(DashId, false);
+            animator.SetBool(ShootId, true);
+            animator.SetBool(RunId, false);
         }
 
-        if (animator.GetBool("Shoot") == true)
+        if (animator.GetBool(ShootId) == true)
         {
+            animator.SetBool(DashId, false);
+            animator.SetBool(RunId, false);
             shootTimer -= Time.deltaTime;
         }
 
         if (shootTimer < 0)
         {
-            animator.SetBool("Shoot", false);
+            animator.SetBool(ShootId, false);
             shootTimer = spareShoot;
         }
 
