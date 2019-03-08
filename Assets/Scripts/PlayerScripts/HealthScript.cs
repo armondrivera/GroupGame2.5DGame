@@ -13,6 +13,8 @@ public class HealthScript : MonoBehaviour
     private float spareTimer;
     public event UnityAction onHPChanged;
     public event UnityAction onDeath;
+    public GameObject gameOverCanvas;
+    public GameObject KillBox;
 
     //C# Properties -- these are beautiful. They run just like methods.
     public bool IsAlive
@@ -74,6 +76,11 @@ public class HealthScript : MonoBehaviour
         {
             invTimer -= Time.deltaTime;
         }
+
+        if (hp <= 0 || HP <= 0)
+        {
+            gameOverCanvas.SetActive(true);
+        }
     }
 
     public void TakeDamage(int amount)
@@ -84,6 +91,16 @@ public class HealthScript : MonoBehaviour
         {
             HP -= amount;
             invTimer = spareTimer;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "KillBox")
+        {
+            hp = 0;
+            HP = 0;
+            Destroy(gameObject);
         }
     }
 }

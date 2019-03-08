@@ -7,6 +7,7 @@ using UnityEngine;
 //That way, you can easily access everything in your game statically (that deserves to be accessed as such)
 public class GameManager : MonoBehaviour {
 	private static GameManager instance;
+    public GameObject gameOverCanvas;
 
 	//This is going to have to be changed if you want multiple scenes. Just take note hehe :) yw.
 	//FOR NOW: This will reference the already-instantiated player GameObject (roughly speaking) in the scene -- AND it must be in the same scene!
@@ -48,7 +49,8 @@ public class GameManager : MonoBehaviour {
 		if (playerHealth != null) {
 			playerMovement = playerHealth.GetComponent<DownShoot>();
 			playerHealth.onDeath += OnPlayerDeath;
-		}
+            gameOverCanvas.SetActive(true);
+        }
 	}
 
 
@@ -56,5 +58,6 @@ public class GameManager : MonoBehaviour {
 	private void OnPlayerDeath() {
 		Debug.Log("The player has died! Ouch." +
 			"\nYou can use the onDeath C# event from anywhere! For example: \"GameManager.PlayerHealth.onDeath += TheNameOfYourMethod;\"");
+        gameOverCanvas.SetActive(true);
 	}
 }

@@ -6,7 +6,7 @@ public class ShootablePlatformSide : MonoBehaviour
 {
 
     public bool shot = false;
-    private float wait = 3f;
+    private float wait = 2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +24,7 @@ public class ShootablePlatformSide : MonoBehaviour
         if (wait < 0)
         {
             shot = false;
-            wait = 3f;
+            wait = 2f;
         }
     }
 

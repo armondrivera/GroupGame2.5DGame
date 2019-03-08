@@ -31,6 +31,8 @@ public class AnimateScript : MonoBehaviour {
 	private Animator animator;
 	private float dashTimer = 0.3f;
 	private float jumpTwo = 0.8f;
+    private float shootTimer = 0.3f;
+    private float spareShoot;
 
 	//Velocity is a vector -- means it has multiple components or "dimensions" -- made of SEVERAL numbers.
 	private Vector3 prevVelocity;
@@ -41,7 +43,7 @@ public class AnimateScript : MonoBehaviour {
 
 	public void Awake() {
 		animator = GetComponent<Animator>();
-
+        spareShoot = shootTimer;
 		prevPosition = transform.position;
 		position = prevPosition;
 	}
@@ -88,6 +90,22 @@ public class AnimateScript : MonoBehaviour {
 			jumpTwo -= Time.fixedDeltaTime;
 			animator.SetBool(IsGrounded, false);
 		}
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            animator.SetBool("Shoot", true);
+        }
+
+        if (animator.GetBool("Shoot") == true)
+        {
+            shootTimer -= Time.deltaTime;
+        }
+
+        if (shootTimer < 0)
+        {
+            animator.SetBool("Shoot", false);
+            shootTimer = spareShoot;
+        }
 
 		if (jumpTwo <= 0) {
 			animator.SetBool(SecondJumpId, false);

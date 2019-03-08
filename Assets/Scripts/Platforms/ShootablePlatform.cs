@@ -21,13 +21,13 @@ public class ShootablePlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (shotL == true)
+        if (shotL == true && shotR == false)
         {
             moveTime -= Time.deltaTime;
             transform.position = new Vector3(transform.position.x + moveSpeed * Time.deltaTime, transform.position.y);
         }
 
-        if (shotR == true)
+        if (shotR == true && shotL == false)
         {
             moveTime -= Time.deltaTime;
             transform.position = new Vector3(transform.position.x - moveSpeed * Time.deltaTime, transform.position.y);
@@ -37,22 +37,24 @@ public class ShootablePlatform : MonoBehaviour
         {
             shotL = false;
             moveTime = spareTime;
+            shotR = false;
         }
 
         if (moveTime < 0 && shotR == true)
         {
             shotR = false;
             moveTime = spareTime;
+            shotL = false;
         }
 
-        if (leftSide.GetComponent<ShootablePlatformSide>().shot == true && rightSide.GetComponent<ShootablePlatformSide>().shot == false)
+        if (leftSide.GetComponent<ShootablePlatformSide>().shot == true )
         {
             shotL = true;
             shotR = false;
         }
         else
         {
-            if (rightSide.GetComponent<ShootablePlatformSide>().shot == true && leftSide.GetComponent<ShootablePlatformSide>().shot == false)
+            if (rightSide.GetComponent<ShootablePlatformSide>().shot == true)
             {
                 shotR = true;
                 shotL = false;

@@ -4,12 +4,12 @@ TextureImporter:
   fileIDToRecycleName:
     21300000: Ruin Tiles-export_0
     21300002: Ruin Tiles-export_1
-    21300004: Ruin Tiles-export_2
-    21300006: Ruin Tiles-export_3
+    21300004: Cloud 1
+    21300006: Cloud 2
     21300008: Ruin Tiles-export_4
     21300010: Ruin Tiles-export_5
-    21300012: Ruin Tiles-export_6
-    21300014: Ruin Tiles-export_7
+    21300012: Cloud 3
+    21300014: Cloud 4
     21300016: Ruin Tiles-export_8
     21300018: Ruin Tiles-export_9
     21300020: Ruin Tiles-export_10
@@ -175,7 +175,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ruin Tiles-export_2
+      name: Cloud 1
       rect:
         serializedVersion: 2
         x: 1542
@@ -195,7 +195,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ruin Tiles-export_3
+      name: Cloud 2
       rect:
         serializedVersion: 2
         x: 2118
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ruin Tiles-export_6
+      name: Cloud 3
       rect:
         serializedVersion: 2
         x: 1543
@@ -275,7 +275,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ruin Tiles-export_7
+      name: Cloud 4
       rect:
         serializedVersion: 2
         x: 2134
