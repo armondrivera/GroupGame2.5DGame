@@ -13,6 +13,8 @@ public class VTurretFunc : MonoBehaviour
     private float timer = 0f;
     private float rotatePos;
     public bool inSight = false;
+    public int damage = 1;
+    public GameObject player;
 
     public float sight;
 
@@ -46,7 +48,7 @@ public class VTurretFunc : MonoBehaviour
         {
             if (hit.collider.tag == "Player")
             {
-                Spotted(true);
+                player.GetComponent<HealthScript>().TakeDamage(damage);
             }
             else
             {

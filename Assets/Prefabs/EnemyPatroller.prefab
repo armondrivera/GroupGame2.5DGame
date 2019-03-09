@@ -149,6 +149,8 @@ MonoBehaviour:
   eyes2: {fileID: 6171217496958851893}
   sight: 10
   fireRate: 3
+  damage: 1
+  player: {fileID: 0}
 --- !u!1 &6171217496958851892
 GameObject:
   m_ObjectHideFlags: 0

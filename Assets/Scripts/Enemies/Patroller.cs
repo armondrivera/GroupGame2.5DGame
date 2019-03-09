@@ -19,6 +19,8 @@ public class Patroller : MonoBehaviour
     public float sight;
     public float fireRate;
     private float fireRateSpare;
+    public int damage = 1;
+    public GameObject player;
 
     private void Start()
     {
@@ -42,7 +44,7 @@ public class Patroller : MonoBehaviour
             fireRate -= Time.deltaTime;
             if (hit.collider.tag == "Player" && fireRate < 0)
             {
-                Instantiate(bullet, eyes.position, eyes.rotation);
+                player.GetComponent<HealthScript>().TakeDamage(damage);
                 fireRate = fireRateSpare;
             }
         }
@@ -52,7 +54,7 @@ public class Patroller : MonoBehaviour
             fireRate -= Time.deltaTime;
             if (hit.collider.tag == "Player" && fireRate < 0)
             {
-                Instantiate(bullet, eyes2.position, eyes2.rotation);
+                player.GetComponent<HealthScript>().TakeDamage(damage);
                 fireRate = fireRateSpare;
             }
         }

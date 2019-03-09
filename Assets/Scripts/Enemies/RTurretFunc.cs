@@ -14,6 +14,9 @@ public class RTurretFunc : MonoBehaviour
     private float timer = 1f;
     private float rotatePos;
     public bool inSight = false;
+    public int damage = 1;
+    public GameObject player;
+
 
     public float sight;
 
@@ -47,7 +50,7 @@ public class RTurretFunc : MonoBehaviour
         {
             if (hit.collider.tag == "Player")
             {
-                Spotted(true);
+                player.GetComponent<HealthScript>().TakeDamage(damage);
             }
             else
             {

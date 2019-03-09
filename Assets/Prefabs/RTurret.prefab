@@ -248,7 +248,9 @@ MonoBehaviour:
   eFirePoint: {fileID: 2372592594316452276}
   target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
   eShot: {fileID: 3313322854778156500, guid: e5c8739edc580014988958cef51a4827, type: 3}
-  LorR: -1
+  LeftOrRight: 0
   speed: 0.11
   inSight: 0
-  sight: 100
+  damage: 1
+  player: {fileID: 0}
+  sight: 30
