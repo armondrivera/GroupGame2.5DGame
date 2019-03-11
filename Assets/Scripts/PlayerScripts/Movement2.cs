@@ -88,33 +88,6 @@ public class Movement2 : MonoBehaviour
             isDashing = false;
         }
 
-        //Mega Buster
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            isShooting = true;
-            moveSpeed = 0;
-            transform.position += Vector3.zero;
-            playerRb.velocity = Vector3.zero;
-        }
-
-        if (isShooting == true)
-        {
-            moveSpeed = 0;
-            isDashing = false;
-            dashTimer = 0.14f;
-            shootTimer -= Time.deltaTime;
-
-            transform.position += Vector3.zero;
-            playerRb.velocity = Vector3.zero;
-        }
-
-        if (shootTimer < 0)
-        {
-            isShooting = false;
-            moveSpeed = spareMoveSpeed;
-            shootTimer = spareShoot;
-        }
-
         //Move Left
         if (Input.GetKey(KeyCode.LeftArrow) && isDashing == false)
         {

@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c67dbc1997059114f80012653e0692c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crumbleTimer: 3
+  crumbleTimer: 0.88
   theTouch: 0
 --- !u!212 &1920690072372787543
 SpriteRenderer:

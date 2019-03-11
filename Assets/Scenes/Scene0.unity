@@ -3489,7 +3489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 161b2733d3dc5474885527f95b1c58bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 1669733281}
   playerHealth: {fileID: 653998671}
   isDeveloperMode: 1
 --- !u!114 &1159213765
@@ -5530,6 +5529,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eda9dfd037ac514385044258e1f35c5, type: 3}
+--- !u!1 &1825652209 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1975464391302561136, guid: 38c4565ae9c47004fbeae2dbb4bd847f,
+    type: 3}
+  m_PrefabInstance: {fileID: 755277329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1853927215
 GameObject:
   m_ObjectHideFlags: 0
@@ -8219,6 +8224,14 @@ PrefabInstance:
       propertyPath: gameOverCanvas
       value: 
       objectReference: {fileID: 1669733281}
+    - target: {fileID: 76, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+      propertyPath: KillBox
+      value: 
+      objectReference: {fileID: 1825652209}
+    - target: {fileID: 77, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
 --- !u!1001 &6370221668671532000

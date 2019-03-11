@@ -59,8 +59,8 @@ public class DownShoot : MonoBehaviour {
 		}
 
 		if (Input.GetKeyDown(KeyCode.Z) && groundJumpsRemaining == 0 && airJumpsUsed < maxAirJumps) {
-			ShootBullet();
-			bulletPrefab.transform.position += new Vector3(60, 0, 0);
+			//ShootBullet();
+			//bulletPrefab.transform.position += new Vector3(60, 0, 0);
 			AirJumpsUsed++;
 		}
 	}
@@ -78,6 +78,6 @@ public class DownShoot : MonoBehaviour {
 	}
 
 	private void ShootBullet() {
-		GameObject.Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+		//GameObject.Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 	}
 }

@@ -152,7 +152,7 @@ MonoBehaviour:
   dashSpeed: 10
   upForce: 460
   bullUpForce: 370
-  shotTimer: 1.5
+  shotRefillTimer: 1.5
   dashTimer: 0.14
   rotatePos: 0
   jumpShotCount: 0
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee99343c92e62434d901d8cce57f0de0, type: 3}
   m_Name: 
@@ -221,6 +221,8 @@ MonoBehaviour:
   maxHP: 6
   destroyOnDeath: 1
   invTimer: 3
+  gameOverCanvas: {fileID: 0}
+  KillBox: {fileID: 0}
 --- !u!95 &65
 Animator:
   serializedVersion: 3
