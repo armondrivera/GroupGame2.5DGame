@@ -11,15 +11,17 @@ public class RTurretFuncP : MonoBehaviour
     public GameObject eShot;
     public float LeftOrRight;
     public float speed = 0.11f;
-    private float timer = 1f;
+    private float timer = 0f;
     private float rotatePos;
     public bool inSight = false;
+    public Animator turretAnim;
 
     public float sight;
 
     private void Start()
     {
         rotatePos = transform.eulerAngles.y;
+        turretAnim = GetComponent<Animator>();
     }
 
     //Contains Timer, chase, and line of sight code
@@ -35,7 +37,7 @@ public class RTurretFuncP : MonoBehaviour
         if (timer <= 0 && inSight == true)
         {
             ShootBullet();
-            timer = 1f;
+            timer = 0f;
         }
 
         //ray cast sight
@@ -47,16 +49,14 @@ public class RTurretFuncP : MonoBehaviour
         {
             if (hit.collider.tag == "Player")
             {
+                turretAnim.SetBool("Seen", true);
                 Spotted(true);
             }
             else
             {
+                turretAnim.SetBool("Seen", false);
                 Spotted(false);
             }
-        }
-        else
-        {
-            Spotted(false);
         }
 
 

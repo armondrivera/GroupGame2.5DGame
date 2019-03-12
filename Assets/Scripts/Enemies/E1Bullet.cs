@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class E1Bullet : MonoBehaviour {
+public class E1Bullet : MonoBehaviour
+{
 	public float speed = 20f;
 	public Rigidbody rb;
-	private int damage = 1;
+	public int damage = 1;
 	private bool isColliding = false;
 
 	// Start is called before the first frame update
@@ -15,10 +16,7 @@ public class E1Bullet : MonoBehaviour {
 
 	public void Update() {
 		isColliding = false;
-
-		if (transform.position.x <= -68) {
-			Destroy(gameObject);
-		}
+        
 	}
 
 	private void OnTriggerEnter(Collider other) {

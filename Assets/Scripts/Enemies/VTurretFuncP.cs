@@ -13,12 +13,14 @@ public class VTurretFuncP : MonoBehaviour
     private float timer = 0f;
     private float rotatePos;
     public bool inSight = false;
+    public Animator turretAnim;
 
     public float sight;
 
     private void Start()
     {
         rotatePos = transform.eulerAngles.y;
+        turretAnim = GetComponent<Animator>();
     }
 
     //Contains Timer, chase, and line of sight code
@@ -46,16 +48,14 @@ public class VTurretFuncP : MonoBehaviour
         {
             if (hit.collider.tag == "Player")
             {
+                turretAnim.SetBool("Seen", true);
                 Spotted(true);
             }
             else
             {
+                turretAnim.SetBool("Seen", false);
                 Spotted(false);
             }
-        }
-        else
-        {
-            Spotted(false);
         }
 
         
@@ -76,7 +76,7 @@ public class VTurretFuncP : MonoBehaviour
         //spawns a bullet on the position given
     void ShootBullet()
     {
-            Instantiate(eShot, eFirePoint.position, eFirePoint.rotation);
+        Instantiate(eShot, eFirePoint.position, eFirePoint.rotation);
 
     }
 

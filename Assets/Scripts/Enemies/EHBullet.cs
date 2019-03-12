@@ -6,7 +6,7 @@ public class EHBullet : MonoBehaviour
 {
     public float speed = 20f;
     public Rigidbody rb;
-    private int damage = 1;
+    public int damage = 1;
     private bool isColliding = false;
 
     // Start is called before the first frame update
@@ -18,11 +18,7 @@ public class EHBullet : MonoBehaviour
     public void Update()
     {
         isColliding = false;
-
-        if (transform.position.x <= -68)
-        {
-            Destroy(gameObject);
-        }
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -31,6 +27,10 @@ public class EHBullet : MonoBehaviour
         {
             isColliding = true;
             other.gameObject.GetComponent<HealthScript>().TakeDamage(damage);
+            Destroy(gameObject);
+        }
+        else
+        {
             Destroy(gameObject);
         }
     }
