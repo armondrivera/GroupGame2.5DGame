@@ -4,20 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class RTurretFunc : MonoBehaviour
+public class VTurretFuncP : MonoBehaviour
 {
     public Transform eFirePoint;
     public Transform target;
     public GameObject eShot;
-    public float LeftOrRight;
     public float speed = 0.11f;
-    private float timer = 1f;
+    private float timer = 0f;
     private float rotatePos;
     public bool inSight = false;
-    public int damage = 1;
-    public GameObject player;
-    public Animator turretAnim;
-
 
     public float sight;
 
@@ -39,24 +34,23 @@ public class RTurretFunc : MonoBehaviour
         if (timer <= 0 && inSight == true)
         {
             ShootBullet();
-            timer = 1f;
+            timer = 0f;
         }
 
         //ray cast sight
         RaycastHit hit;
 
-        Ray losRayR = new Ray(transform.position, Vector3.right * LeftOrRight);
+        Ray losRayR = new Ray(transform.position, Vector3.down);
 
         if (Physics.Raycast(losRayR, out hit, sight))
         {
             if (hit.collider.tag == "Player")
             {
-                turretAnim.SetBool("Seen", true);
-                player.GetComponent<HealthScript>().TakeDamage(damage);
+                Spotted(true);
             }
             else
             {
-                turretAnim.SetBool("Seen", false);
+                Spotted(false);
             }
         }
         else
@@ -64,7 +58,7 @@ public class RTurretFunc : MonoBehaviour
             Spotted(false);
         }
 
-
+        
     }
 
     private void FlipRight()
@@ -79,14 +73,14 @@ public class RTurretFunc : MonoBehaviour
         rotatePos = 180f;
     }
 
-    //spawns a bullet on the position given
+        //spawns a bullet on the position given
     void ShootBullet()
     {
-        Instantiate(eShot, eFirePoint.position, eFirePoint.rotation);
+            Instantiate(eShot, eFirePoint.position, eFirePoint.rotation);
 
     }
 
-
+        
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Bullet")

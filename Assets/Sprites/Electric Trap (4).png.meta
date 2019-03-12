@@ -1,7 +1,9 @@
 fileFormatVersion: 2
-guid: 79aaced5387e0c547a50cf200c43a046
+guid: fdc2ccde7e4ce9a47bf53d49f807f42e
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Electric Trap (4)_0
+    21300002: Electric Trap (4)_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,11 +95,51 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Electric Trap (4)_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 70
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939603086cd1345449b2248ea953aed2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Electric Trap (4)_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 0
+        width: 70
+        height: 508
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1c22976cc83f049b117d10a5e12750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 84a135c1b25ff394da80eeef26c8ccf6
     vertices: []
     indices: 
     edges: []

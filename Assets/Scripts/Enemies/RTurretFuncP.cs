@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class RTurretFunc : MonoBehaviour
+public class RTurretFuncP : MonoBehaviour
 {
     public Transform eFirePoint;
     public Transform target;
@@ -14,10 +14,6 @@ public class RTurretFunc : MonoBehaviour
     private float timer = 1f;
     private float rotatePos;
     public bool inSight = false;
-    public int damage = 1;
-    public GameObject player;
-    public Animator turretAnim;
-
 
     public float sight;
 
@@ -51,12 +47,11 @@ public class RTurretFunc : MonoBehaviour
         {
             if (hit.collider.tag == "Player")
             {
-                turretAnim.SetBool("Seen", true);
-                player.GetComponent<HealthScript>().TakeDamage(damage);
+                Spotted(true);
             }
             else
             {
-                turretAnim.SetBool("Seen", false);
+                Spotted(false);
             }
         }
         else

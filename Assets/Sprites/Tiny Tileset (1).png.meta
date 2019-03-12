@@ -1,7 +1,9 @@
 fileFormatVersion: 2
-guid: 79aaced5387e0c547a50cf200c43a046
+guid: 6debb502b7752a4499d8a6e948c8abd7
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Tiny Tileset (1)_0
+    21300002: Tiny Tileset (1)_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -93,11 +95,51 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Tiny Tileset (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 163
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093a04ee3b9ee2041b25af09de0d59e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiny Tileset (1)_1
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 0
+        width: 104
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab617e723d4f73747bc32cd503b40c4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 047a9d70ba96d2a4ab5f96a0b70423a9
     vertices: []
     indices: 
     edges: []

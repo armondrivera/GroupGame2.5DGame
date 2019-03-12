@@ -15,11 +15,15 @@ public class VTurretFunc : MonoBehaviour
     public bool inSight = false;
     public int damage = 1;
     public GameObject player;
+    public Animator turretAnim;
 
     public float sight;
 
+    
+
     private void Start()
     {
+        turretAnim = GetComponent<Animator>();
         rotatePos = transform.eulerAngles.y;
     }
 
@@ -48,11 +52,12 @@ public class VTurretFunc : MonoBehaviour
         {
             if (hit.collider.tag == "Player")
             {
+                turretAnim.SetBool("Seen", true);
                 player.GetComponent<HealthScript>().TakeDamage(damage);
             }
             else
             {
-                Spotted(false);
+                turretAnim.SetBool("Seen", false);
             }
         }
         else

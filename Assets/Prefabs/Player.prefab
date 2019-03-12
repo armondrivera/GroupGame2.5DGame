@@ -151,7 +151,7 @@ MonoBehaviour:
   moveSpeed: 0.2
   dashSpeed: 10
   upForce: 460
-  bullUpForce: 370
+  bullUpForce: 250
   shotRefillTimer: 1.5
   dashTimer: 0.14
   rotatePos: 0

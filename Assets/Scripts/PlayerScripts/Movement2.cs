@@ -35,7 +35,7 @@ public class Movement2 : MonoBehaviour
     private void Awake()
     {
         spareMoveSpeed = moveSpeed;
-        spareShoot = shootTimer;
+        spareShoot = shotRefillTimer;
         playerRb = GetComponent<Rigidbody>();
         playerA = GetComponent<Animator>();
     }
@@ -51,7 +51,7 @@ public class Movement2 : MonoBehaviour
         if (shotRefillTimer <= 0f)
         {
             jumpShotCount--;
-            shotRefillTimer = 1.5f;
+            shotRefillTimer = spareShoot;
         }
 
         //Jumps
@@ -132,6 +132,7 @@ public class Movement2 : MonoBehaviour
 
     void OnCollisionStay(Collision collision)
     {
+
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
             plat = 1;

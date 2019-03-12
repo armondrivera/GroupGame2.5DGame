@@ -204,7 +204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &178884900
 Transform:
   m_ObjectHideFlags: 0
@@ -2032,7 +2032,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &663666180
 GameObject:
@@ -3437,7 +3437,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 161b2733d3dc5474885527f95b1c58bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 1669733281}
   playerHealth: {fileID: 653998671}
   isDeveloperMode: 1
 --- !u!114 &1159213765
