@@ -11,19 +11,19 @@ public class MovingPlatFollow : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision col)
+    void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.tag.Equals("MovePlat"))
         {
-            this.transform.parent = col.transform;
+            gameObject.transform.SetParent(col.transform);
         }
     }
 
-    private void OnCollisionExit(Collision col)
+    void OnCollisionExit(Collision col)
     {
         if (col.gameObject.tag.Equals("MovePlat"))
         {
-            this.transform.parent = null;
+            gameObject.transform.SetParent(null);
         }
     }
 }

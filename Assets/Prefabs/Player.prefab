@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 65}
   - component: {fileID: 69}
   - component: {fileID: 8949655604211836630}
-  - component: {fileID: 653998668}
+  - component: {fileID: 7857083008046131922}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -303,7 +303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   turnSpeedThreshold: 10
---- !u!114 &653998668
+--- !u!114 &7857083008046131922
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -132,14 +132,13 @@ public class Movement2 : MonoBehaviour
 
     void OnCollisionStay(Collision collision)
     {
-
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
             plat = 1;
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
