@@ -119,9 +119,9 @@ GameObject:
   - component: {fileID: 5579650053660438393}
   - component: {fileID: 3829974192530277418}
   - component: {fileID: 6254295059648939327}
-  - component: {fileID: 6798623647074047181}
   - component: {fileID: 2519246722204183779}
   - component: {fileID: 8498077652100332972}
+  - component: {fileID: 661520603127245833}
   m_Layer: 0
   m_Name: RTurret
   m_TagString: Enemy
@@ -188,28 +188,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &6798623647074047181
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8498077652100332971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4101ad2ceac0edd4fa5287dc17776d43, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eFirePoint: {fileID: 2372592594316452276}
-  target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
-  eShot: {fileID: 3313322854778156500, guid: e5c8739edc580014988958cef51a4827, type: 3}
-  LeftOrRight: 0
-  speed: 0.11
-  inSight: 0
-  damage: 1
-  player: {fileID: 0}
-  turretAnim: {fileID: 8498077652100332972}
-  sight: 30
 --- !u!212 &2519246722204183779
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -277,3 +255,23 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &661520603127245833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498077652100332971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9a989c49d20414cabcb87375b2be7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eFirePoint: {fileID: 2372592594316452276}
+  target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+  eShot: {fileID: 3313322854778156500, guid: e5c8739edc580014988958cef51a4827, type: 3}
+  LeftOrRight: -1
+  speed: 0.11
+  inSight: 0
+  turretAnim: {fileID: 8498077652100332972}
+  sight: 20

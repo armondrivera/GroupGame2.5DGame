@@ -2,22 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreIncrease : MonoBehaviour
+public class Treasure : MonoBehaviour
 {
     private ScoreHolder scoreHolderRef;
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Treasure")
+        if (collision.gameObject.tag == "Player")
         {
             scoreHolderRef = GameObject.FindWithTag("SceneController").GetComponent<ScoreHolder>();
             scoreHolderRef.IncreaseScore();
-            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
-    }
-
-    private void Start()
-    {
-        Destroy(gameObject, 3.0f);
     }
 }

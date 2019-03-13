@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8686fa9edc5372a4bb8c94eb403591af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rebuildTimer: 9
+  rebuildTimer: 5
   theTouch: 0
   platform: {fileID: 522641176065124509, guid: 1485846d485395c448f0db482df87726, type: 3}
   spare: {fileID: 0}

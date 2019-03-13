@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5747307679123974881}
   - component: {fileID: 5367103362290576507}
   - component: {fileID: 4464321517703924153}
-  - component: {fileID: 90352635211773225}
   - component: {fileID: 7781484293072552033}
   m_Layer: 0
   m_Name: MovingKillBox
@@ -142,21 +141,6 @@ MonoBehaviour:
   downLimit: 0
   upLimit: 0
   moveRight: 1
---- !u!111 &90352635211773225
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6271532792759215397}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 51f1f633210ff8943a6582432567877b, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &7781484293072552033
 Animator:
   serializedVersion: 3

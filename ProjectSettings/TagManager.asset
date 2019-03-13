@@ -14,6 +14,7 @@ TagManager:
   - GameOverCanvas
   - SceneController
   - KillBox
+  - Treasure
   layers:
   - Default
   - TransparentFX

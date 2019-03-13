@@ -83,7 +83,7 @@ public class Movement2 : MonoBehaviour
         if (dashTimer <= 0f)
         {
             dashTimer = 0.14f;
-            transform.position += Vector3.zero;
+			playerRb.position += Vector3.zero;
             playerRb.velocity = Vector3.zero;
             isDashing = false;
         }
@@ -169,26 +169,26 @@ public class Movement2 : MonoBehaviour
 
     void MoveLeft()
     {
-        transform.position += new Vector3(-1, 0, 0) * moveSpeed;
+		playerRb.position += new Vector3(-1, 0, 0) * moveSpeed;
 
     }
 
     void MoveRight()
     {
-        transform.position += new Vector3(1, 0, 0) * moveSpeed;
+		playerRb.position += new Vector3(1, 0, 0) * moveSpeed;
     }
 
     void Dash()
     {
         if (rotatePos == 0)
         {
-            gameObject.transform.position += new Vector3(1, 0, 0) * 0.62f;
+			playerRb.position += new Vector3(1, 0, 0) * 0.62f;
             //playerRb.AddForce(Vector3.right * dashSpeed);
         }
 
         if (rotatePos == 180)
         {
-            gameObject.transform.position += new Vector3(-1, 0, 0) * 0.62f;
+			playerRb.position += new Vector3(-1, 0, 0) * 0.62f;
             //playerRb.AddForce(-Vector3.right * dashSpeed);
         }
 

@@ -8,8 +8,8 @@ public class ScoreHolder : MonoBehaviour
     private int currentScore = 0;
     //Need to make the canvas
     public Text scoreText;
-    public GameObject gameOverCanvas;
-    public HealthScript check;
+    //public GameObject gameOverCanvas;
+    //public HealthScript check;
     //public GameObject winImage;
     //public int winScore;
     // Start is called before the first frame update
@@ -17,7 +17,7 @@ public class ScoreHolder : MonoBehaviour
     {
         //winImage.SetActive(false);
         UpdateUI();
-        gameOverCanvas.SetActive(false);
+        //gameOverCanvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -29,19 +29,14 @@ public class ScoreHolder : MonoBehaviour
         }*/
     }
 
-    void UpdateUI()
+    public void UpdateUI()
     {
-        scoreText.text = "Treasure Collected: " + currentScore.ToString();
-
-        if (check.HP <= 0)
-        {
-            gameOverCanvas.SetActive(true);
-        }
+        scoreText.text = "Treasure Collected: " + Globals.score.ToString();
     }
 
     public void IncreaseScore()
     {
-        currentScore++;
+        Globals.score++;
         UpdateUI();
     }
 

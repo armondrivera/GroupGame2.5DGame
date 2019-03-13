@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 933826731}
   - component: {fileID: 344876174}
   - component: {fileID: 344876175}
+  - component: {fileID: 6967504047914184925}
   m_Layer: 0
   m_Name: VTurret
   m_TagString: Enemy
@@ -169,6 +170,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6967504047914184925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933826730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35027f99bcd5934fa6e4b45c0f3cfee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eFirePoint: {fileID: 1683008680}
+  target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+  eShot: {fileID: 6916165624359833793, guid: 36a20300acea2284aa058f3bdba818ef, type: 3}
+  speed: 0.11
+  inSight: 0
+  turretAnim: {fileID: 344876175}
+  sight: 100
 --- !u!1 &1683008679
 GameObject:
   m_ObjectHideFlags: 0
