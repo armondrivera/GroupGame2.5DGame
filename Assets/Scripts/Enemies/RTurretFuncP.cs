@@ -28,6 +28,7 @@ public class RTurretFuncP : MonoBehaviour
     //https://answers.unity.com/questions/989092/do-you-know-any-patrolling-ai-script-for-a-navmesh.html
     void Update()
     {
+        Debug.DrawRay(eFirePoint.position, Vector3.right * LeftOrRight * sight, Color.red);
         //Shoot Timer
         if (timer > 0 && inSight == true)
         {
@@ -41,12 +42,8 @@ public class RTurretFuncP : MonoBehaviour
         }
 
         //ray cast sight
-        RaycastHit hit;
-
-        Ray losRayR = new Ray(transform.position, Vector3.right * LeftOrRight);
-
-        if (Physics.Raycast(losRayR, out hit, sight))
-        {
+        RaycastHit2D hit = Physics2D.Raycast(eFirePoint.position, Vector2.right * LeftOrRight * sight);
+        
             if (hit.collider.tag == "Player")
             {
                 turretAnim.SetBool("Seen", true);
@@ -57,20 +54,17 @@ public class RTurretFuncP : MonoBehaviour
                 turretAnim.SetBool("Seen", false);
                 Spotted(false);
             }
-        }
-
-
     }
 
     private void FlipRight()
     {
-        gameObject.transform.Rotate(Vector3.up * 180);
+        gameObject.transform.Rotate(Vector2.up * 180);
         rotatePos = 0f;
     }
 
     private void FlipLeft()
     {
-        gameObject.transform.Rotate(Vector3.up * 180);
+        gameObject.transform.Rotate(Vector2.up * 180);
         rotatePos = 180f;
     }
 
@@ -82,7 +76,7 @@ public class RTurretFuncP : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {

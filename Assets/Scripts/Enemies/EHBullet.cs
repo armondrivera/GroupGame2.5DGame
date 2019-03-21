@@ -5,7 +5,7 @@ using UnityEngine;
 public class EHBullet : MonoBehaviour
 {
     public float speed = 20f;
-    public Rigidbody rb;
+    public Rigidbody2D rb;
     public int damage = 1;
     private bool isColliding = false;
 
@@ -21,7 +21,7 @@ public class EHBullet : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.name == "Player" && isColliding == false)
         {

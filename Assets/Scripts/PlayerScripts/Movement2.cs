@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement2 : MonoBehaviour
 {
-    public Rigidbody playerRb;
+    public Rigidbody2D playerRb;
     public Transform playerT;
     public float moveSpeed = 0.14f;
     private float spareMoveSpeed;
@@ -36,7 +36,7 @@ public class Movement2 : MonoBehaviour
     {
         spareMoveSpeed = moveSpeed;
         spareShoot = shotRefillTimer;
-        playerRb = GetComponent<Rigidbody>();
+        playerRb = GetComponent<Rigidbody2D>();
         playerA = GetComponent<Animator>();
     }
 
@@ -83,8 +83,8 @@ public class Movement2 : MonoBehaviour
         if (dashTimer <= 0f)
         {
             dashTimer = 0.14f;
-			playerRb.position += Vector3.zero;
-            playerRb.velocity = Vector3.zero;
+			playerRb.position += Vector2.zero;
+            playerRb.velocity = Vector2.zero;
             isDashing = false;
         }
 
@@ -130,7 +130,7 @@ public class Movement2 : MonoBehaviour
         }
     }
 
-    void OnCollisionStay(Collision collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
@@ -138,7 +138,7 @@ public class Movement2 : MonoBehaviour
         }
     }
 
-    void OnCollisionExit(Collision collision)
+    void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
@@ -151,43 +151,43 @@ public class Movement2 : MonoBehaviour
     {
         if (plat == 0 && jumpShotCount < 3)
         {
-            playerRb.AddForce(Vector3.up * bullUpForce);
+            playerRb.AddForce(Vector2.up * bullUpForce);
             jumpShotCount++;
         }
         else
             if (plat == 1)
         {
-            playerRb.AddForce(Vector3.up * upForce);
+            playerRb.AddForce(Vector2.up * upForce);
         }
     }
 
     void MoveDown()
     {
-        Physics.gravity = new Vector3(0, -1, 0);
+        Physics.gravity = new Vector2(0, -1);
     }
 
     void MoveLeft()
     {
-		playerRb.position += new Vector3(-1, 0, 0) * moveSpeed;
+		playerRb.position += new Vector2(-1, 0) * moveSpeed;
 
     }
 
     void MoveRight()
     {
-		playerRb.position += new Vector3(1, 0, 0) * moveSpeed;
+		playerRb.position += new Vector2(1, 0) * moveSpeed;
     }
 
     void Dash()
     {
         if (rotatePos == 0)
         {
-			playerRb.position += new Vector3(1, 0, 0) * 0.62f;
+			playerRb.position += new Vector2(1, 0) * 0.62f;
             //playerRb.AddForce(Vector3.right * dashSpeed);
         }
 
         if (rotatePos == 180)
         {
-			playerRb.position += new Vector3(-1, 0, 0) * 0.62f;
+			playerRb.position += new Vector2(-1, 0) * 0.62f;
             //playerRb.AddForce(-Vector3.right * dashSpeed);
         }
 
@@ -195,13 +195,13 @@ public class Movement2 : MonoBehaviour
 
     void FlipLeft()
     {
-        playerT.Rotate(Vector3.up * 180);
+        playerT.Rotate(Vector2.up * 180);
         rotatePos = 180;
     }
 
     void FlipRight()
     {
-        playerT.Rotate(Vector3.up * 180);
+        playerT.Rotate(Vector2.up * 180);
         rotatePos = 0f;
     }
 

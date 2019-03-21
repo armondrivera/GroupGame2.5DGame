@@ -40,12 +40,10 @@ public class VTurretFuncP : MonoBehaviour
         }
 
         //ray cast sight
-        RaycastHit hit;
+        RaycastHit2D hit = Physics2D.Raycast(eFirePoint.position, Vector2.down);
 
-        Ray losRayR = new Ray(transform.position, Vector3.down);
-
-        if (Physics.Raycast(losRayR, out hit, sight))
-        {
+        Ray2D losRayR = new Ray2D(transform.position, Vector2.down * sight);
+        
             if (hit.collider.tag == "Player")
             {
                 turretAnim.SetBool("Seen", true);
@@ -56,20 +54,19 @@ public class VTurretFuncP : MonoBehaviour
                 turretAnim.SetBool("Seen", false);
                 Spotted(false);
             }
-        }
 
         
     }
 
     private void FlipRight()
     {
-        gameObject.transform.Rotate(Vector3.up * 180);
+        gameObject.transform.Rotate(Vector2.up * 180);
         rotatePos = 0f;
     }
 
     private void FlipLeft()
     {
-        gameObject.transform.Rotate(Vector3.up * 180);
+        gameObject.transform.Rotate(Vector2.up * 180);
         rotatePos = 180f;
     }
 
@@ -81,7 +78,7 @@ public class VTurretFuncP : MonoBehaviour
     }
 
         
-    private void OnTriggerEnter(Collider collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Bullet")
         {

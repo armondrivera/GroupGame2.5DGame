@@ -11,7 +11,7 @@ public class MovingPlatFollow : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision col)
+    void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.tag.Equals("MovePlat"))
         {
@@ -19,7 +19,7 @@ public class MovingPlatFollow : MonoBehaviour
         }
     }
 
-    void OnCollisionExit(Collision col)
+    void OnCollisionExit2D(Collision2D col)
     {
         if (col.gameObject.tag.Equals("MovePlat"))
         {
