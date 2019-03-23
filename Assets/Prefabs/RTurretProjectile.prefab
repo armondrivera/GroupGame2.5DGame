@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4649833957930274955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.03, y: 0, z: 0}
+  m_LocalPosition: {x: 3.14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3504925086401213773}
@@ -41,8 +41,8 @@ GameObject:
   - component: {fileID: 3504925086401213773}
   - component: {fileID: 5553981481035539626}
   - component: {fileID: 3019728369653380815}
-  - component: {fileID: 3860560816038211291}
   - component: {fileID: 38133116196726200}
+  - component: {fileID: 875101384030163842}
   m_Layer: 0
   m_Name: RTurretProjectile
   m_TagString: Enemy
@@ -132,26 +132,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3860560816038211291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8498077652100332971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c9a989c49d20414cabcb87375b2be7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  eFirePoint: {fileID: 2372592594316452276}
-  target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
-  eShot: {fileID: 3313322854778156500, guid: e5c8739edc580014988958cef51a4827, type: 3}
-  LeftOrRight: -1
-  speed: 0.11
-  inSight: 0
-  turretAnim: {fileID: 3019728369653380815}
-  sight: 20
 --- !u!61 &38133116196726200
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -178,3 +158,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.354352, y: 2.1513748}
   m_EdgeRadius: 0
+--- !u!114 &875101384030163842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8498077652100332971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c9a989c49d20414cabcb87375b2be7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eFirePoint: {fileID: 2372592594316452276}
+  target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+  eShot: {fileID: 3313322854778156500, guid: e5c8739edc580014988958cef51a4827, type: 3}
+  LeftOrRight: 0
+  speed: 0.11
+  inSight: 0
+  turretAnim: {fileID: 3019728369653380815}
+  sight: 0

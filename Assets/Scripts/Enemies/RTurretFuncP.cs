@@ -28,7 +28,7 @@ public class RTurretFuncP : MonoBehaviour
     //https://answers.unity.com/questions/989092/do-you-know-any-patrolling-ai-script-for-a-navmesh.html
     void Update()
     {
-        Debug.DrawRay(eFirePoint.position, Vector3.right * LeftOrRight * sight, Color.red);
+        //Debug.DrawRay(eFirePoint.position, Vector3.right * LeftOrRight * sight, Color.red);
         //Shoot Timer
         if (timer > 0 && inSight == true)
         {
@@ -42,12 +42,15 @@ public class RTurretFuncP : MonoBehaviour
         }
 
         //ray cast sight
-        RaycastHit2D hit = Physics2D.Raycast(eFirePoint.position, Vector2.right * LeftOrRight * sight);
+        RaycastHit2D hit = Physics2D.Raycast(eFirePoint.position, Vector2.left * LeftOrRight * sight);
         
-            if (hit.collider.tag == "Player")
+            if (hit.collider)
             {
-                turretAnim.SetBool("Seen", true);
-                Spotted(true);
+                if (hit.collider.tag == "Player")
+                {
+                    turretAnim.SetBool("Seen", true);
+                    Spotted(true);
+                }
             }
             else
             {

@@ -18,7 +18,8 @@ public class EHBullet : MonoBehaviour
     public void Update()
     {
         isColliding = false;
-        
+        rb.velocity = transform.right * speed;
+
     }
 
     private void OnTriggerEnter2D(Collider2D other)
