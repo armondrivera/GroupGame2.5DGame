@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class MovingPlatFollow : MonoBehaviour
 {
-
+    public Rigidbody2D rb;
     // Update is called once per frame
+
     void Update()
     {
         
@@ -15,7 +16,7 @@ public class MovingPlatFollow : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("MovePlat"))
         {
-            gameObject.transform.SetParent(col.transform);
+            rb.MovePosition(col.rigidbody.position);
         }
     }
 
@@ -23,7 +24,7 @@ public class MovingPlatFollow : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("MovePlat"))
         {
-            gameObject.transform.SetParent(null);
+            rb.MovePosition(rb.position);
         }
     }
 }
