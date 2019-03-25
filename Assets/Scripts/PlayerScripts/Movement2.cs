@@ -135,6 +135,7 @@ public class Movement2 : MonoBehaviour
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
             plat = 1;
+            jumpShotCount = 0;
         }
     }
 
@@ -156,9 +157,9 @@ public class Movement2 : MonoBehaviour
         }
         else
             if (plat == 1)
-        {
-            playerRb.AddForce(Vector2.up * upForce);
-        }
+            {
+                playerRb.AddForce(Vector2.up * upForce);
+            }
     }
 
     void MoveDown()

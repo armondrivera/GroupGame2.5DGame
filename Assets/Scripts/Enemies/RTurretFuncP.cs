@@ -11,7 +11,7 @@ public class RTurretFuncP : MonoBehaviour
     public GameObject eShot;
     public float LeftOrRight;
     public float speed = 0.11f;
-    private float timer = 0f;
+    private float timer = 1f;
     private float rotatePos;
     public bool inSight = false;
     public Animator turretAnim;
@@ -38,7 +38,7 @@ public class RTurretFuncP : MonoBehaviour
         if (timer <= 0 && inSight == true)
         {
             ShootBullet();
-            timer = 0f;
+            timer = 1f;
         }
 
         //ray cast sight

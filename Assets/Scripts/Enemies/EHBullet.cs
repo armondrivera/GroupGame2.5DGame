@@ -4,21 +4,20 @@ using UnityEngine;
 
 public class EHBullet : MonoBehaviour
 {
-    public float speed = 20f;
-    public Rigidbody2D rb;
+    public float speed = 0.1f;
     public int damage = 1;
     private bool isColliding = false;
 
     // Start is called before the first frame update
     public void Start()
     {
-        rb.velocity = transform.right * speed;
+        transform.position += transform.right * speed;
     }
 
     public void Update()
     {
         isColliding = false;
-        rb.velocity = transform.right * speed;
+        transform.position += transform.right * speed;
 
     }
 

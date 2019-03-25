@@ -16,7 +16,9 @@ public class MovingPlatFollow : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("MovePlat"))
         {
-            rb.MovePosition(col.rigidbody.position);
+            GetComponent<Rigidbody2D>().isKinematic = true;
+            transform.parent = col.transform;
+            GetComponent<Movement2>().plat = 1;
         }
     }
 
@@ -24,7 +26,9 @@ public class MovingPlatFollow : MonoBehaviour
     {
         if (col.gameObject.tag.Equals("MovePlat"))
         {
-            rb.MovePosition(rb.position);
+            GetComponent<Rigidbody2D>().isKinematic = false;
+
+            transform.parent = null;
         }
     }
 }
