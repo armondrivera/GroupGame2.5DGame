@@ -12,6 +12,10 @@ public class Movement2 : MonoBehaviour
 
     private bool isDashing = false;
     private bool isShooting = false;
+    private bool stay;
+
+    private float curY;
+    private float groundY;
 
     public float upForce = 5f;
     public float bullUpForce = 5f;
@@ -43,6 +47,9 @@ public class Movement2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //updating variables
+        curY = gameObject.transform.position.y;
+
         if (jumpShotCount > 0)
         {
             shotRefillTimer -= Time.deltaTime;
@@ -128,14 +135,24 @@ public class Movement2 : MonoBehaviour
         {
             //playerA.Play("Ikera-Idle");
         }
+
+        if (curY == groundY || stay == true)
+        {
+            plat = 1;
+        }
+        else
+        {
+            plat = 0;
+        }
     }
 
     void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
-            plat = 1;
+            groundY = curY;
             jumpShotCount = 0;
+            stay = true;
         }
     }
 
@@ -144,6 +161,7 @@ public class Movement2 : MonoBehaviour
         if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
             plat = 0;
+            stay = false;
         }
     }
 
