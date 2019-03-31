@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1932563479500220408}
   m_Layer: 0
   m_Name: MovingParentVertical
-  m_TagString: Untagged
+  m_TagString: MovePlat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &885658478499516535
 Transform:
@@ -59,6 +59,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: VerticalMovingPlatform
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455015347563477989, guid: 5835a95875ef42e4c924c5a6e5c4356b,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6392556444314393804, guid: 5835a95875ef42e4c924c5a6e5c4356b,
         type: 3}

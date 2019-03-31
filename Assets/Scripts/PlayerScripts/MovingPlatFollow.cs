@@ -14,11 +14,15 @@ public class MovingPlatFollow : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag.Equals("MovePlat"))
+        if (col.gameObject.tag.Equals("MovePlat") && !Input.anyKey)
         {
             //GetComponent<Rigidbody2D>().isKinematic = true;
-            transform.parent = col.transform;
+            transform.parent = col.transform.parent;
             //GetComponent<Movement2>().plat = 1;
+        }
+        else
+        {
+            transform.parent = null;
         }
     }
 
