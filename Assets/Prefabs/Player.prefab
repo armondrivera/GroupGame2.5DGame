@@ -119,8 +119,8 @@ MonoBehaviour:
   playerT: {fileID: 49}
   moveSpeed: 0.2
   dashSpeed: 10
-  upForce: 460
-  bullUpForce: 280
+  upForce: 725
+  bullUpForce: 540
   shotRefillTimer: 1.5
   dashTimer: 0.14
   rotatePos: 0
@@ -287,8 +287,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 2
+  m_Material: {fileID: 6200000, guid: a46eb71dfd389804d9910d391cae6bac, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
