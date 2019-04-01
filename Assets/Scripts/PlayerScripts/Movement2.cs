@@ -187,13 +187,13 @@ public class Movement2 : MonoBehaviour
 
     void MoveLeft()
     {
-		playerRb.position += new Vector2(-1, 0) * moveSpeed;
+		transform.position += transform.right * moveSpeed;
 
     }
 
     void MoveRight()
     {
-		playerRb.position += new Vector2(1, 0) * moveSpeed;
+        transform.position += transform.right * moveSpeed;
     }
 
     void Dash()
