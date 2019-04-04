@@ -170,6 +170,7 @@ public class Movement2 : MonoBehaviour
     {
         if (plat == 0 && jumpShotCount < 3)
         {
+            playerRb.velocity = Vector2.zero;
             playerRb.AddForce(Vector2.up * bullUpForce);
             jumpShotCount++;
         }
@@ -187,26 +188,30 @@ public class Movement2 : MonoBehaviour
 
     void MoveLeft()
     {
-		transform.position += transform.right * moveSpeed;
-
+		//transform.position += transform.right * moveSpeed;
+        playerRb.MovePosition(transform.position + transform.right * moveSpeed);
     }
 
     void MoveRight()
     {
-        transform.position += transform.right * moveSpeed;
+        //transform.position += transform.right * moveSpeed;
+        playerRb.MovePosition(transform.position + transform.right * moveSpeed);
+
     }
 
     void Dash()
     {
         if (rotatePos == 0)
         {
-			playerRb.position += new Vector2(1, 0) * 0.62f;
+			//playerRb.position += new Vector2(1, 0) * 0.62f;
+            playerRb.MovePosition(transform.position + transform.right * 0.62f);
             //playerRb.AddForce(Vector3.right * dashSpeed);
         }
 
         if (rotatePos == 180)
         {
-			playerRb.position += new Vector2(-1, 0) * 0.62f;
+			//playerRb.position += new Vector2(-1, 0) * 0.62f;
+            playerRb.MovePosition(transform.position + transform.right * 0.62f);
             //playerRb.AddForce(-Vector3.right * dashSpeed);
         }
 
