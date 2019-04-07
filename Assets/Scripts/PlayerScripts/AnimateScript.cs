@@ -32,12 +32,14 @@ public class AnimateScript : MonoBehaviour {
 
 	private Animator animator;
 	private float dashTimer = 0.3f;
-	private float jumpTwo = 0.8f;
+	private float jumpTwo = 1f;
     private float shootTimer = 0.2f;
     private float spareShoot;
+    private float curY;
+    private float groundY;
 
-	//Velocity is a vector -- means it has multiple components or "dimensions" -- made of SEVERAL numbers.
-	private Vector3 prevVelocity;
+    //Velocity is a vector -- means it has multiple components or "dimensions" -- made of SEVERAL numbers.
+    private Vector3 prevVelocity;
 	private float prevSignedSpeed;
 	private Vector3 prevPosition;
 	private Vector3 position;
@@ -51,10 +53,14 @@ public class AnimateScript : MonoBehaviour {
 	}
 
 	public void FixedUpdate() {
-		if (Input.GetKey(KeyCode.LeftArrow) && animator.GetBool(IsGrounded) && !animator.GetBool(DashId) && dashTimer != 0.8 || Input.GetKey(KeyCode.RightArrow)
+        curY = gameObject.transform.position.y;
+
+        if (Input.GetKey(KeyCode.LeftArrow) && animator.GetBool(IsGrounded) && !animator.GetBool(DashId) && dashTimer != 0.8 || Input.GetKey(KeyCode.RightArrow)
 			&& animator.GetBool(IsGrounded) && !animator.GetBool(DashId)) {
 			animator.SetBool(RunId, true);
-		} else {
+            animator.SetBool(JumpId, false);
+            animator.SetBool(SecondJumpId, false);
+        } else {
 			animator.SetBool(RunId, false);
 		}
 
@@ -64,7 +70,7 @@ public class AnimateScript : MonoBehaviour {
             playerAnim.SetBool(RunId, false);
         }*/
 
-		if (Input.GetKeyDown(KeyCode.C) && gameObject.GetComponent<Movement2>().plat != 0) {
+		if (Input.GetKeyDown(KeyCode.X) && gameObject.GetComponent<CharacterController2D>().plat == 1) {
 			animator.SetBool(RunId, false);
 			animator.SetBool(DashId, true);
 			animator.SetBool(RunId, false);
@@ -81,7 +87,7 @@ public class AnimateScript : MonoBehaviour {
 			animator.SetBool(SecondJumpId, false);
 		}
 
-		if (gameObject.GetComponent<Movement2>().plat == 0) {
+		if (gameObject.GetComponent<CharacterController2D>().plat == 0) {
 			animator.SetBool(JumpId, true);
 			animator.SetBool(IsGrounded, false);
             animator.SetBool(DashId, false);
@@ -89,46 +95,57 @@ public class AnimateScript : MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.Z) && animator.GetBool(JumpId) == true) {
 			animator.SetBool(SecondJumpId, true);
-			jumpTwo -= Time.fixedDeltaTime;
-			animator.SetBool(IsGrounded, false);
+            animator.Play("Ikeda-Bull-Jump");
 		}
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (animator.GetBool(SecondJumpId))
         {
-            animator.SetBool(DashId, false);
-            animator.SetBool(ShootId, true);
-            animator.SetBool(RunId, false);
+            jumpTwo -= Time.deltaTime;
         }
 
-        if (animator.GetBool(ShootId) == true)
-        {
-            animator.SetBool(DashId, false);
-            animator.SetBool(RunId, false);
-            shootTimer -= Time.deltaTime;
-        }
+        //if (Input.GetKeyDown(KeyCode.X))
+        //{
+        //    animator.SetBool(DashId, false);
+        //    animator.SetBool(ShootId, true);
+        //    animator.SetBool(RunId, false);
+        //}
 
-        if (shootTimer < 0)
-        {
-            animator.SetBool(ShootId, false);
-            shootTimer = spareShoot;
-        }
+        //if (animator.GetBool(ShootId) == true)
+        //{
+        //    animator.SetBool(DashId, false);
+        //    animator.SetBool(RunId, false);
+        //    shootTimer -= Time.deltaTime;
+        //}
 
-		if (jumpTwo <= 0) {
-			animator.SetBool(SecondJumpId, false);
-			jumpTwo = 0.8f;
-		}
+        //if (shootTimer < 0)
+        //{
+        //    animator.SetBool(ShootId, false);
+        //    shootTimer = spareShoot;
+        //}
 
-		if (gameObject.GetComponent<Movement2>().plat == 1) {
+		//if (jumpTwo <= 0) {
+		//	animator.SetBool(SecondJumpId, false);
+		//	jumpTwo = 1f;
+		//}
+
+		if (gameObject.GetComponent<CharacterController2D>().plat == 1) {
 			animator.SetBool(JumpId, false);
-			animator.SetBool(HitGroundId, true);
+			//animator.SetBool(HitGroundId, true);
 			animator.SetBool(IsGrounded, true);
 			animator.SetBool(SecondJumpId, false);
-			jumpTwo = 0.8f;
+			jumpTwo = 1f;
 		}
 
-		//TurnUpdate();
-		//No longer used currently. Method is still there though, so have fun if you want.
-	}
+        if (curY == groundY)
+        {
+            animator.SetBool(IsGrounded, true);
+            animator.SetBool(JumpId, false);
+            animator.SetBool(SecondJumpId, false);
+        }
+
+        //TurnUpdate();
+        //No longer used currently. Method is still there though, so have fun if you want.
+    }
 
 	private void TurnUpdate() {
 		position = transform.position;
@@ -153,14 +170,13 @@ public class AnimateScript : MonoBehaviour {
 		prevPosition = position;
 	}
 
-	private void OnCollisionStay(Collision collision) {
+	private void OnCollisionStay2D(Collision2D collision) {
 		if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat") {
 			animator.SetBool(IsGrounded, true);
-			jumpTwo = 0.8f;
-		}
-        else
-        {
-            animator.SetBool(IsGrounded, false);
+            animator.SetBool(JumpId, false);
+            animator.SetBool(SecondJumpId, false);
+            jumpTwo = 1f;
+            groundY = curY;
         }
 	}
 	/*Animator playerAnim;
