@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
         //Slide right into the dm's
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetButtonDown("Fire1"))
         {
             slide = true;
         }

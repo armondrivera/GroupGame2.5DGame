@@ -70,7 +70,7 @@ public class AnimateScript : MonoBehaviour {
             playerAnim.SetBool(RunId, false);
         }*/
 
-		if (Input.GetKeyDown(KeyCode.X) && gameObject.GetComponent<CharacterController2D>().plat == 1) {
+		if (Input.GetButtonDown("Fire1") && gameObject.GetComponent<CharacterController2D>().plat == 1) {
 			animator.SetBool(RunId, false);
 			animator.SetBool(DashId, true);
 			animator.SetBool(RunId, false);
