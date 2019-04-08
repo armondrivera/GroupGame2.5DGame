@@ -28,7 +28,7 @@ public class MovingPlatFollow : MonoBehaviour
 
     void OnCollisionExit2D(Collision2D col)
     {
-        if (col.gameObject.tag.Equals("MovePlat"))
+        if (col.gameObject.tag.Equals("MovePlat") || Input.GetButtonDown("Jump"))
         {
             //GetComponent<Rigidbody2D>().isKinematic = false;
 

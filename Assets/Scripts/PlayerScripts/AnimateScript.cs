@@ -74,7 +74,10 @@ public class AnimateScript : MonoBehaviour {
 			animator.SetBool(RunId, false);
 			animator.SetBool(DashId, true);
 			animator.SetBool(RunId, false);
-		}
+            animator.SetBool(JumpId, false);
+            animator.SetBool(SecondJumpId, false);
+
+        }
 
 		if (animator.GetBool(DashId) == true) {
 			dashTimer -= Time.fixedDeltaTime;

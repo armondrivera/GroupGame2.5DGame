@@ -61,7 +61,9 @@ public class CharacterController2D : MonoBehaviour
 			if (colliders[i].gameObject != gameObject)
 			{
 				m_Grounded = true;
-				if (!wasGrounded)
+                plat = 1;
+                if (!wasGrounded)
+                    plat = 0;
 					OnLandEvent.Invoke();
 			}
 		}
@@ -184,7 +186,7 @@ public class CharacterController2D : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
             jumpCounter = 0;
             onGround = true;
@@ -194,7 +196,7 @@ public class CharacterController2D : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" || collision.gameObject.tag == "MovePlat")
         {
             onGround = false;
             plat = 0;
