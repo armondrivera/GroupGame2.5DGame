@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: bcad73aac297b1946a1d084548b1a324
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: upsideDownTiles0
+    21300002: upsideDownTiles1
+    21300004: upsideDownTiles2
+    21300006: upsideDownTiles3
+    21300008: upsideDownTiles4
+    21300010: upsideDownTiles5
+    21300012: upsideDownTiles6
+    21300014: upsideDownTiles7
+    21300016: upsideDownTiles8
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: upsideDownTiles0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 259
+        width: 177
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -55.5, y: 64.5}
+        - {x: -88.5, y: 64.5}
+        - {x: -88.5, y: 37.5}
+        - {x: -88.5, y: -64.5}
+        - {x: 88.5, y: -64.5}
+        - {x: 88.5, y: 64.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70628668da087484098cc002e85d4190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsideDownTiles1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 258.6667
+        width: 176.66667
+        height: 129.33333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -88.333336, y: 64.666664}
+        - {x: -88.333336, y: -64.33331}
+        - {x: 88.333336, y: -64.33331}
+        - {x: 88.333336, y: 64.666664}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff4cbb64a821b2c408733f1045089a9b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsideDownTiles2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 258.6667
+        width: 176.66667
+        height: 129.33333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -88.333336, y: 64.666664}
+        - {x: -88.333336, y: -64.33331}
+        - {x: 88.333336, y: -64.33331}
+        - {x: 88.33334, y: 64.66666}
+        - {x: 58.5, y: 64.666664}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2102ed8bd510b409567f769df64fc0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsideDownTiles3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 129.66667
+        width: 176.66667
+        height: 129.33333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -88.333336, y: 64.666664}
+        - {x: -88.333336, y: -16.333328}
+        - {x: -88.333336, y: -64.66667}
+        - {x: 88.333336, y: -64.33333}
+        - {x: 88.333336, y: 64.666664}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c129f4d04f205ed4f8080263e19060a3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsideDownTiles4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 129.66667
+        width: 176.66667
+        height: 129.33333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -88.333336, y: 64.666664}
+        - {x: -88.333336, y: -64.33333}
+        - {x: 88.333336, y: -64.33333}
+        - {x: 88.333336, y: 64.666664}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a818da053603aca4887361a018932805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsideDownTiles5
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 129.66667
+        width: 176.66667
+        height: 129.33333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -88.333336, y: 64.666664}
+        - {x: -88.333336, y: -64.33333}
+        - {x: 88.33334, y: -64.33334}
+        - {x: 88.333336, y: 64.666664}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a7e66f774f2d644a66546604304310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsideDownTiles6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.66667175
+        width: 176.66667
+        height: 129.33333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -72.5, y: 64.666664}
+        - {x: -78.333336, y: 64.666664}
+        - {x: -88.333336, y: 64.666664}
+        - {x: -88.333336, y: 5.666664}
+        - {x: -88.333336, y: -64.33333}
+        - {x: 88.333336, y: -64.33333}
+        - {x: 88.333336, y: 64.666664}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e81331e03c1f24db2cb0587599ec5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsideDownTiles7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0.66667175
+        width: 176.66667
+        height: 129.33333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -88.333336, y: 64.666664}
+        - {x: -88.333336, y: -64.33333}
+        - {x: 88.333336, y: -64.33333}
+        - {x: 88.333336, y: 64.666664}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e068c1b491beed04bb05fc243819e1e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: upsideDownTiles8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0.66667175
+        width: 176.66667
+        height: 129.33333
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 88.33334, y: -64.666664}
+        - {x: 88.33334, y: 64.666664}
+        - {x: 74.5, y: 64.666664}
+        - {x: -88.333336, y: 64.666664}
+        - {x: -88.333336, y: -64.33333}
+        - {x: 74.5, y: -64.33333}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99466c257c025349963f77843e9f48c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 9a603b98203bdec458e8e0ec48130f81
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

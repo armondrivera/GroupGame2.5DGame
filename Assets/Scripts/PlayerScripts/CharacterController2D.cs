@@ -141,7 +141,7 @@ public class CharacterController2D : MonoBehaviour
 		}
 
         //If the player jumps in the air
-        if (!m_Grounded && jump && jumpCounter < 4)
+        if (plat == 0 && jump && jumpCounter <= 3)
         {
             m_Rigidbody2D.velocity = Vector2.zero;
             m_Rigidbody2D.AddForce(new Vector2(0f, m_AirJumpForce));
