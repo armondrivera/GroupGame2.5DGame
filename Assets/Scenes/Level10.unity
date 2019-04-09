@@ -5955,15 +5955,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6254295059648939327, guid: b66c96373790be246a2402dfc24e65dc,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 661520603127245833, guid: b66c96373790be246a2402dfc24e65dc,
         type: 3}
       propertyPath: LeftOrRight
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254295059648939327, guid: b66c96373790be246a2402dfc24e65dc,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66c96373790be246a2402dfc24e65dc, type: 3}
@@ -6071,7 +6071,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1899891789}
   m_Enabled: 1
-  m_CellSize: {x: 1.76665, y: 1.305, z: 0}
+  m_CellSize: {x: 1.76665, y: 1.303, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0

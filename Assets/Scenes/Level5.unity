@@ -1102,15 +1102,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1975464391302561137, guid: 38c4565ae9c47004fbeae2dbb4bd847f,
-        type: 3}
-      propertyPath: rebuildTimer
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5066433414515066783, guid: 38c4565ae9c47004fbeae2dbb4bd847f,
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1975464391302561137, guid: 38c4565ae9c47004fbeae2dbb4bd847f,
+        type: 3}
+      propertyPath: rebuildTimer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38c4565ae9c47004fbeae2dbb4bd847f, type: 3}
@@ -1594,7 +1594,7 @@ Grid:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1159923424}
   m_Enabled: 1
-  m_CellSize: {x: 1.76665, y: 1.305, z: 0}
+  m_CellSize: {x: 1.76665, y: 1.303, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
