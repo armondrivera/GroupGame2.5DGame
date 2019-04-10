@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 456c4c433dff73a419c4b9130bdc9bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 1000
-  m_AirJumpForce: 580
+  m_JumpForce: 1500
+  m_AirJumpForce: 900
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.008
   m_AirControl: 1
@@ -344,7 +344,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 6200000, guid: a46eb71dfd389804d9910d391cae6bac, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -359,11 +359,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 43}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a46eb71dfd389804d9910d391cae6bac, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.4581499}
+  m_Offset: {x: 0, y: -0.6176567}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -374,7 +374,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5768738, y: 1.0193424}
+  m_Size: {x: 0.5768738, y: 1.338356}
   m_EdgeRadius: 0
 --- !u!58 &6833807532114794041
 CircleCollider2D:
@@ -383,7 +383,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

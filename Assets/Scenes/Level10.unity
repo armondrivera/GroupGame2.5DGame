@@ -5955,15 +5955,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 661520603127245833, guid: b66c96373790be246a2402dfc24e65dc,
-        type: 3}
-      propertyPath: LeftOrRight
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6254295059648939327, guid: b66c96373790be246a2402dfc24e65dc,
         type: 3}
       propertyPath: m_UseGravity
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 661520603127245833, guid: b66c96373790be246a2402dfc24e65dc,
+        type: 3}
+      propertyPath: LeftOrRight
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66c96373790be246a2402dfc24e65dc, type: 3}
@@ -6103,7 +6103,7 @@ GameObject:
   - component: {fileID: 1908968029}
   - component: {fileID: 1908968028}
   - component: {fileID: 1908968027}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundNEW
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -6399,10 +6399,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 43, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.3
@@ -6446,6 +6442,10 @@ PrefabInstance:
     - target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 76, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
       propertyPath: gameOverCanvas

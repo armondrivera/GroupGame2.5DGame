@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6392556444314393804}
   - component: {fileID: 1247312210}
   - component: {fileID: 8993981135108856789}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: VerticalMovingPlatform
   m_TagString: MovePlat
   m_Icon: {fileID: 0}

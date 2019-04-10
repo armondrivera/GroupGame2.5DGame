@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 170374123}
   - component: {fileID: 170374122}
   - component: {fileID: 170374121}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: GroundNEW
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -9750,6 +9750,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5579650053660438393, guid: b66c96373790be246a2402dfc24e65dc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3829974192530277418, guid: b66c96373790be246a2402dfc24e65dc,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6798623647074047181, guid: b66c96373790be246a2402dfc24e65dc,
         type: 3}
       propertyPath: LeftOrRight
@@ -9769,16 +9779,6 @@ PrefabInstance:
         type: 3}
       propertyPath: sight
       value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 5579650053660438393, guid: b66c96373790be246a2402dfc24e65dc,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3829974192530277418, guid: b66c96373790be246a2402dfc24e65dc,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b66c96373790be246a2402dfc24e65dc, type: 3}
@@ -10159,10 +10159,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 43, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.7
@@ -10206,6 +10202,10 @@ PrefabInstance:
     - target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 76, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
       propertyPath: gameOverCanvas
