@@ -144,7 +144,7 @@ public class CharacterController2D : MonoBehaviour
         if (plat == 0 && jump && jumpCounter <= 3)
         {
             m_Rigidbody2D.velocity = Vector2.zero;
-            m_Rigidbody2D.AddForce(new Vector2(0f, m_AirJumpForce));
+            m_Rigidbody2D.AddForce(new Vector2(0, m_AirJumpForce), ForceMode2D.Impulse);
             jumpCounter++;
         }
 

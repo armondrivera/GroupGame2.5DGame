@@ -120,8 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 456c4c433dff73a419c4b9130bdc9bca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 1500
-  m_AirJumpForce: 900
+  m_JumpForce: 2248
+  m_AirJumpForce: 21
   m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.008
   m_AirControl: 1
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Grounded: 0
   onGround: 0
   plat: 0
-  dashSpeed: 10
+  dashSpeed: 0.62
   dashTimer: 0.14
   OnLandEvent:
     m_PersistentCalls:
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 653998668}
-  runSpeed: 1000
+  runSpeed: 200
 --- !u!114 &74
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -344,7 +344,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0
-  m_GravityScale: 3
+  m_GravityScale: 6
   m_Material: {fileID: 6200000, guid: a46eb71dfd389804d9910d391cae6bac, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
