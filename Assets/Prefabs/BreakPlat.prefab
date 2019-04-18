@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7420110816164369297}
   - component: {fileID: 1920690072372787543}
   - component: {fileID: 6510198393374902141}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BreakPlat
   m_TagString: Floor
   m_Icon: {fileID: 0}
