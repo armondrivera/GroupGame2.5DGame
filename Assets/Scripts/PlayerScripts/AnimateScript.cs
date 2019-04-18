@@ -55,8 +55,7 @@ public class AnimateScript : MonoBehaviour {
 	public void FixedUpdate() {
         curY = gameObject.transform.position.y;
 
-        if (Input.GetKey(KeyCode.LeftArrow) && animator.GetBool(IsGrounded) && !animator.GetBool(DashId) && dashTimer != 0.8 || Input.GetKey(KeyCode.RightArrow)
-			&& animator.GetBool(IsGrounded) && !animator.GetBool(DashId)) {
+        if (Input.GetButton("Horizontal") && animator.GetBool(IsGrounded) && !animator.GetBool(DashId) && dashTimer != 0.8) {
 			animator.SetBool(RunId, true);
             animator.SetBool(JumpId, false);
             animator.SetBool(SecondJumpId, false);
