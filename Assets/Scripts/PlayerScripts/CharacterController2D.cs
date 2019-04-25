@@ -25,6 +25,7 @@ public class CharacterController2D : MonoBehaviour
     public float dashSpeed = 10.0f;
     private bool isDashing = false;
     public float dashTimer = 0.14f;
+    public AudioScript noise;
 
     [Header("Events")]
 	[Space]
@@ -138,6 +139,7 @@ public class CharacterController2D : MonoBehaviour
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+            noise.PlayJumpSound();
 		}
 
         //If the player jumps in the air
@@ -145,6 +147,7 @@ public class CharacterController2D : MonoBehaviour
         {
             m_Rigidbody2D.velocity = Vector2.zero;
             m_Rigidbody2D.AddForce(new Vector2(0, m_AirJumpForce), ForceMode2D.Impulse);
+            noise.PlayJumpSound();
             jumpCounter++;
         }
 

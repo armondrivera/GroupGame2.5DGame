@@ -14,7 +14,9 @@ public class PlayerMovement : MonoBehaviour
     bool slide = false;
 
     float dashTimer = 0.14f;
-    
+
+
+    public AudioScript noise;
 
     // Update is called once per frame
     void Update()
@@ -30,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             slide = true;
+            noise.PlaySlideSound();
         }
 
     }
