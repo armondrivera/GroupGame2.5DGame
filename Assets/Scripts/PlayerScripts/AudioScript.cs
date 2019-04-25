@@ -12,25 +12,29 @@ public class AudioScript : MonoBehaviour
     [Range(0.0f, 1.0f)] public float jumpVolume;
     [Range(0.0f, 1.0f)] public float slideVolume;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private float pitch = 1.0f;
+    private float spare;
+    public float minPitchVal;
+    public float maxPitchVal;
 
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
-        
+        spare = pitch;
+    }
+    private void Update()
+    {
+        pitch = Random.Range(minPitchVal, maxPitchVal);
     }
 
     public void PlayJumpSound()
     {
         soundPlayer.PlayOneShot(jump, jumpVolume);
+        soundPlayer.pitch = pitch;
     }
 
     public void PlaySlideSound()
     {
         soundPlayer.PlayOneShot(slide, slideVolume);
+        soundPlayer.pitch = spare;
     }
 }

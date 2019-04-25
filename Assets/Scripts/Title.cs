@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Title : MonoBehaviour
 {
+    public BGM backgroundmusic;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +16,11 @@ public class Title : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z) && Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             SceneManager.LoadScene("Level1");
+            Object.DontDestroyOnLoad(backgroundmusic.soundPlayer);
+            Object.DontDestroyOnLoad(backgroundmusic.bgm);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ElecTrap : MonoBehaviour
 {
@@ -52,5 +53,16 @@ public class ElecTrap : MonoBehaviour
         {
             other.gameObject.GetComponent<HealthScript>().TakeDamage(damage);
         }
+    }
+    private void Death(GameObject p)
+    {
+        Destroy(p);
+
+        Invoke("Reset", 1.0f);
+    }
+
+    private void Reset()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

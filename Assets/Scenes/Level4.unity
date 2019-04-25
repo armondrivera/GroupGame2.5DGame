@@ -327,6 +327,16 @@ PrefabInstance:
       propertyPath: sceneToLoad
       value: Level5
       objectReference: {fileID: 0}
+    - target: {fileID: 3685048530185599944, guid: c80c969291166904eb9a95242bec4ae1,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.25938737
+      objectReference: {fileID: 0}
+    - target: {fileID: 3685048530185599944, guid: c80c969291166904eb9a95242bec4ae1,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 2.464139
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c80c969291166904eb9a95242bec4ae1, type: 3}
 --- !u!1 &170076733
@@ -5760,11 +5770,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6996741905483366043, guid: 18bee9919c0248a4ca7555109949ac34,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4103628038597816871, guid: 18bee9919c0248a4ca7555109949ac34,
         type: 3}
       propertyPath: m_Offset.x
@@ -5779,6 +5784,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996741905483366043, guid: 18bee9919c0248a4ca7555109949ac34,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18bee9919c0248a4ca7555109949ac34, type: 3}
@@ -6258,7 +6268,7 @@ Tilemap:
   - first: {x: -23, y: 69, z: 0}
     second:
       m_TileIndex: 3
-      m_TileSpriteIndex: 11
+      m_TileSpriteIndex: 12
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -6531,10 +6541,10 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 1
-    m_Data: {fileID: 21300014, guid: 28c9b8cba67644046b938ff4abac8373, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300014, guid: 28c9b8cba67644046b938ff4abac8373, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 25
     m_Data:
@@ -6587,10 +6597,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 43, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
     - target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
       propertyPath: m_LocalPosition.x
       value: -36.7
@@ -6634,6 +6640,10 @@ PrefabInstance:
     - target: {fileID: 49, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 43, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}
+      propertyPath: m_Name
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 798b6c237e728734982ee4cd0fa8e671, type: 3}

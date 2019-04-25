@@ -14,7 +14,7 @@ public class StartAgain : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Z) && Input.GetKey(KeyCode.C))
+        if (Input.GetKey(KeyCode.Z))
         {
             Globals.score = 0;
             SceneManager.LoadScene("Title");

@@ -352,6 +352,8 @@ MonoBehaviour:
   slide: {fileID: 8300000, guid: c830d09e87f772a4ca684d6ed6b0bdf3, type: 3}
   jumpVolume: 0.5
   slideVolume: 0.5
+  minPitchVal: 0.85
+  maxPitchVal: 1.15
 --- !u!82 &8533536439507220034
 AudioSource:
   m_ObjectHideFlags: 0
